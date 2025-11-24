@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Efekty obrazu</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h2>Efekty na obrazach</h2>
+    </header>
+    <section class="block">
+        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="obraz1"> <br>
+        <input type="radio" name="opcja" id="blu">Blur <br>
+        <input type="radio" name="opcja" id="sepia">Sepia <br>
+        <input type="radio" name="opcja" id="negatyw">Negatyw <br>
+        <button onclick="zastosuj()">Zastosuj</button>
+    </section>
+    <section class="block">
+        <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="obraz2"> <br>
+        <button onclick="kolor()">Kolorowy</button>
+        <button onclick="czarnoBialy()">Czarno-biały</button>
+    </section>
+    <section class="block">
+        <img src="owoce.jpg" alt="Kosz pełen owoców" id="obraz3"> <br>
+        <input type="range" id="suwak1" min="0" max="100" value="100"> <br>
+        <button onclick="przezroczystosc()">Zastosuj</button>
+    </section>
+    <section class="block">
+        <img src="zolw.jpg" alt="Żółw w wodzie" id="obraz4"> <br>
+        <input type="range" id="suwak2" min="0" max="250"> <br>
+        <button onclick="jasnosc()">Zastosuj</button>
+    </section>
+    <footer>
+        <a href="http://www.css.com" target="_blank" rel="noopener noreferrer">Zobacz inne efekty obrazu</a>
+        <p>Stronę wykonał: AW</p>
+    </footer>
+</body>
+<script>
+    const zastosuj=()=>{
+        if(blu.checked)
+        {
+            obraz1.style.filter="blur(8px)";
+        }
+        if(sepia.checked)
+        {
+            obraz1.style.filter="sepia(100%)";
+        }
+        if(negatyw.checked)
+        {
+            obraz1.style.filter="invert(100%)";
+        }
+    }
+
+    const czarnoBialy=()=>{
+        obraz2.style.filter="grayscale(100%)";
+    }
+
+    const kolor=()=>{
+        obraz2.style.filter="none";
+    }
+
+    const przezroczystosc=()=>{
+        obraz3.style.filter="opacity("+suwak1.value+"%)";
+    }
+
+    const jasnosc=()=>{
+        obraz4.style.filter="brightness("+suwak2.value+"%)";
+    }
+
+</script>
+</html>
