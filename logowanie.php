@@ -21,7 +21,7 @@ else
         if( $l =="u1" && $p="aaa")
         {
             echo"Prawidłowe dane </br>";
-            header('Location: dziekujemy4ct2.php');
+            header('Location: poprawnedane.php');
         }
         else
         {
