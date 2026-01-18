@@ -28,7 +28,7 @@ else
     }
     else
     {
-        echo "Uzupełnij wszystkie pola!";
+        echo "Uzupełnij wszystkie pola";
     }
 }
 ?>
