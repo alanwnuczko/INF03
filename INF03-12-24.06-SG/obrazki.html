@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Efekty obrazu</title>
     <link rel="stylesheet" href="styl.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
@@ -37,37 +38,4 @@
         <p>Stronę wykonał: AW</p>
     </footer>
 </body>
-<script>
-    const zastosuj=()=>{
-        if(blu.checked)
-        {
-            obraz1.style.filter="blur(8px)";
-        }
-        if(sepia.checked)
-        {
-            obraz1.style.filter="sepia(100%)";
-        }
-        if(negatyw.checked)
-        {
-            obraz1.style.filter="invert(100%)";
-        }
-    }
-
-    const czarnoBialy=()=>{
-        obraz2.style.filter="grayscale(100%)";
-    }
-
-    const kolor=()=>{
-        obraz2.style.filter="none";
-    }
-
-    const przezroczystosc=()=>{
-        obraz3.style.filter="opacity("+suwak1.value+"%)";
-    }
-
-    const jasnosc=()=>{
-        obraz4.style.filter="brightness("+suwak2.value+"%)";
-    }
-
-</script>
 </html>
