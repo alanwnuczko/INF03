@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Chat</title>
+</head>
+<body>
+    <header>
+        <h2>Chat</h2>
+    </header>
+
+    <div id="sidebar">
+        <h3>Chaty</h3>
+        <ul>
+            <li>Ogólny</li>
+            <li>Tematyczne
+                <ol>
+                    <li>Turystyczny</li>
+                    <li>Żeglarski</li>
+                    <li>Filatelistyczny</li>
+                    <li>Hodowla zwierzątek domowych</li>
+                </ol>
+            </li>
+        </ul>
+        <h3>Uczestnicy</h3>
+        <p>Jolanta Nowak</p>
+        <img src="Jolka.jpg" alt="Jolanta Nowak">
+        <p>Krzysztof Łukasiński</p>
+        <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+    </div>
+
+    <main>
+        <div id="chat">
+            <div class="jolka">
+                <img src="Jolka.jpg" alt="Jolanta Nowak">
+                <p>Cześć idziesz jutro do kina?</p>
+            </div>
+
+            <div class="krzysiek">
+                <img src="Krzysiek.jpg" alt="Krzysztof Łukasiński">
+                <p>Tak! A ty?</p>
+            </div>
+        </div>
+        <label for="wiadomosc">Wpisz wiadomość:</label>
+        <input type="text" name="wiadomosc" id="wiadomosc">
+        <button onclick="wyslij()">Wyślij</button>
+        <button onclick="generuj()">Generuj losową odpowiedź</button>
+    </main>
+    <footer>
+        <h5>Chat wykonał: <a href="https://www.github.com/alanwnuczko">Alan Wnuczko</a></h5>
+    </footer>
+    <script src="skrypt.js"></script>
+</body>
+</html>
