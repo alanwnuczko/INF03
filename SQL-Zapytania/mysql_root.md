@@ -6,7 +6,7 @@ cd mysql
 ```yaml
 mysql -u root -h localhost
 ```
-```yaml
+```sql
+--Wybór bazy danych
 USE nazwa_bazy_danych;
 ```
-
