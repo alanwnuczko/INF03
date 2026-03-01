@@ -56,7 +56,7 @@
     </main>
 
     <footer>
-        <p>Autor Strony: 12345678912</p>
+        <p>Autor Strony: <a href="https://www.github.com/alanwnuczko"> Alan Wnuczko</a></p>
     </footer>
 </body>
 </html>

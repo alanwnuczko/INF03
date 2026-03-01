@@ -1,0 +1,54 @@
+*{
+    font-family: "Bookman Old Style",serif;
+}
+.baner
+{
+    background-color: darkcyan;
+    color: white;
+    width: 50%;
+    height: 100px;
+    letter-spacing: 15px;
+    float: left;
+}
+
+.logo{
+    padding-top: 5px;
+    padding-left: 15px;
+    width: 90px;
+    height: auto;
+}
+footer {
+    background-color: darkcyan;
+    color: white;
+}
+.karta{
+    background-color: azure;
+    width: 30%;
+    margin: 1%;
+    box-shadow: 4px 4px 8px dimgray;
+    float: left;
+}
+.klasa img{
+    width: 100%;
+}
+p, h2, h3{
+    margin: 15px;
+}
+a{
+    color: white;
+}
+h5{
+    background-color: teal;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0px;
+}
+h5:hover{
+    background-color: lightseagreen;
+}
+.cytat{
+    text-align: center;
+    padding: 30px 0px;
+    font-size: italic;
+    clear: both;
+}
