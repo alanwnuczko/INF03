@@ -54,6 +54,8 @@
                         {
                             echo"<p>Wpisanych wycieczek: ".$row[0] ."";
                         }
+
+                        mysqli_close($conn);
                 ?>
             </p>
             <p>Użytkowników forum: 200</p>
