@@ -61,7 +61,7 @@
         </div>
     </main>
     <footer>
-        <p>Stronę wykonał: <a href="" >Alan Wnuczko</a></p>
+        <p>Stronę wykonał: <a href="https://github.com/alanwnuczko" style="color: white;">Alan Wnuczko</a></p>
     </footer>
 </body>
 </html>
