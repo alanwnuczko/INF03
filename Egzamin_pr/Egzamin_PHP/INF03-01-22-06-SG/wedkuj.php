@@ -25,6 +25,10 @@
             ?>
         </ol>
     </div>
+    <div id="right">
+        <img src="ryba1.jpg" alt="Sum">
+        <a href="kwerendy.md">Pobierz kwerendy</a>
+    </div>
     <div id="left2">
         <h3>Ryby drapieżne naszych wód</h3>
         <table>
@@ -48,10 +52,6 @@
                 mysqli_close($pol);
             ?>
         </table>
-    </div>
-    <div id="right">
-        <img src="ryba1.jpg" alt="Sum">
-        <a href="kwerendy.md">Pobierz kwerendy</a>
     </div>
 
     <footer>

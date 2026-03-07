@@ -1,5 +1,9 @@
 *{
-    font-family: 'Helvita';
+    font-family: 'Helvetica';
+}
+
+body{
+    margin: 0;
 }
 
 header, footer{
@@ -8,13 +12,24 @@ header, footer{
     padding: 5px;
     font-size: 130%;
     text-align: center;
+}
+
+footer{
     clear: both;
+}
+
+footer p{
+    margin: 5px;
 }
 
 #left1, #left2{
     background-color: #EFEFEF;
     width: 55%;
     float: left;
+}
+
+h3{
+    margin-top: 0;
 }
 
 #left1{
@@ -56,6 +71,6 @@ tr:hover{
     background-color: #4FB3BF;
 }
 
-a{
+#right a{
     display: block;
 }
