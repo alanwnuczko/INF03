@@ -68,6 +68,8 @@
                             $stmt -> close();
                         }
                     }
+
+                    mysqli_close($pol);
                 ?>
             </table>
         </section>
