@@ -13,6 +13,7 @@ Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami dan
 | Opis | Nr zadania | Język | Arkusz | Rozwiązanie |
 |------|------------|-------|--------|-------------|
 | Gry komputerowe | 1 | PHP | [INF.03-01-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-01-25-06-SG/arkusz_i_baza/INF03-01-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-01-25-06-SG/) |
+| Firma przewozowa | 4 | PHP | [INF.03-04-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-04-25-06-SG/arkusz_i_baza/INF03-04-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-04-25-06-SG/) |
 | Smoki | 8 | PHP + JS | [INF.03-08-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-08-25-06-SG/arkusz_i_baza/INF03-08-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-08-25-06-SG/) |
 | Remonty mieszkania | 9 | PHP | [INF.03-09-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-09-25-06-SG/arkusz_i_baza/INF03-09-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-09-25-06-SG/) |
 | Przychodnia medica | 12 | PHP  | [INF.03-12-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-12-25-06-SG/arkusz_i_baza/INF03-12-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-12-25-06-SG/) |
@@ -21,6 +22,7 @@ Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami dan
 
 | Opis | Nr zadania | Język | Arkusz | Rozwiązanie |
 |------|------------|-------|--------|-------------|
+| Kalendarze | 3 | PHP | [INF.03-03-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-03-25-01-SG/arkusz_i_baza/INF03-03-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-03-25-01-SG/) |
 | Hurtownia z obuwiem | 4 | PHP | [INF.03-04-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-04-25-01-SG/arkusz_i_baza/INF03-04-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-04-25-01-SG/) |
 
 ---
