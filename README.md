@@ -52,6 +52,12 @@ INF03/
 | Pracownicy firmy | 10 | JS | [INF.03-10-24.06-SG](Egzamin_pr/Egzamin_JS/INF03-10-24-06-SG/arkusz_i_baza/INF03-10-24-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-10-24-06-SG/) |
 | Nakładanie filtrów na obrazki | 12 | JS | [INF.03-12-24.06-SG](Egzamin_pr/Egzamin_JS/INF03-12-24-06-SG/arkusz_i_baza/INF03-12-24-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-12-24-06-SG/) |
 
+**Sesja zima**
+
+| Opis | Nr | Język | Arkusz | Rozwiązanie |
+|---|---|---|---|---|
+| Salon fryzjerski | 8 | JS | [INF.03-08-24.01-SG](Egzamin_pr/Egzamin_JS/INF03-08-24-01-SG/arkusz_i_baza/INF03-08-24-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-08-24-01-SG/) |
+
 ---
 
 ### 2022
