@@ -61,5 +61,6 @@ INF03/
 | Opis | Nr | Język | Arkusz | Rozwiązanie |
 |---|---|---|---|---|
 | Portal dla wędkarzy | 1 | PHP | [INF.03-01-22.06-SG](Egzamin_pr/Egzamin_PHP/INF03-01-22-06-SG/arkusz_i_baza/INF03-01-22-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-01-22-06-SG/) |
+| stacja paliw | 2 | JS | [INF.03-02-22.06-SG](Egzamin_pr/Egzamin_PHP/INF03-02-22-06-SG/arkusz_i_baza/INF03-02-22-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-02-22-06-SG/) |
 
 ---
