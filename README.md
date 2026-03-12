@@ -24,6 +24,7 @@ Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami dan
 |------|------------|-------|--------|-------------|
 | Kalendarze | 3 | PHP | [INF.03-03-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-03-25-01-SG/arkusz_i_baza/INF03-03-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-03-25-01-SG/) |
 | Hurtownia z obuwiem | 4 | PHP | [INF.03-04-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-04-25-01-SG/arkusz_i_baza/INF03-04-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-04-25-01-SG/) |
+| Szkolenia | 5 | PHP | [INF.03-05-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-05-25-01-SG/arkusz_i_baza/INF03-05-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-05-25-01-SG/) |
 
 ---
 
