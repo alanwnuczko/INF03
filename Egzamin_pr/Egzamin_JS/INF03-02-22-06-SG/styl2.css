@@ -1,0 +1,55 @@
+body{
+    font-family: 'Cambria';
+    text-align: center;
+}
+
+header, footer{
+    background-color: rgb(120,0,46);
+    color: white;
+    padding: 5px;
+    font-size: 150%;
+}
+
+#menu{
+    background-color: rgb(173,20,87);
+    text-align: left;
+}
+
+#left{
+    background-color: snow;
+    width: 40%;
+    height: 322px;
+    float: left;
+}
+
+#right{
+    background-color: rgb(173,20,87);
+    width: 40%;
+    height: 322px;
+    float: right;
+}
+
+#right img{
+    margin: 40px;
+    padding: 10px;
+}
+
+#right img:hover{
+    border: 1px dotted yellowgreen;
+}
+
+a{
+    padding: 0px 50px;
+    color: yellowgreen;
+}
+
+table{
+    width: 90%;
+}
+
+table, td{
+    border: 1px solid olivedrab;
+}
+footer{
+    clear: both;
+}
