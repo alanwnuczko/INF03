@@ -16,6 +16,16 @@ INF03/
 ---
 ## Egzaminy Praktyczne
 
+### 2026
+
+**Sesja zima**
+
+| Opis | Nr | Język | Arkusz | Rozwiązanie |
+|---|---|---|---|---|
+| Paznokcie | 9 | JS | [INF.03-09-26.01-SG](Egzamin_pr\Egzamin_JS\INF03-09-26-01-SG\arkusz_i_baza\INF03-09-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr\Egzamin_JS\INF03-09-26-01-SG/) |
+
+---
+
 ### 2025
 
 **Sesja lato**
