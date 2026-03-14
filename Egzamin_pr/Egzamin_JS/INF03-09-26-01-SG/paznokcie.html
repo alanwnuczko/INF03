@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznokci</title>
+</head>
+<body>
+    <aside>
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+        <nav>
+            <button id="p1" onmouseover="changeTab('kolor')">Kolor</button>
+            <button id="p2" onmouseover="changeTab('ksztalt')">Kształt</button>
+            <button id="p3" onmouseover="changeTab('wzor')">Wzór</button>
+        </nav>
+        <section id="s1">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="kolory paznokci"><br>
+            <input type="color" value="#ff0000">
+        </section>
+        <section id="s2">
+            <h2>kształt</h2>
+            <img src="ksztalt.png" alt="kształt paznokci"><br>
+            <select>
+                <option value="migdał">Migdał</option>
+                <option value="zaokrąglony">zaokrąglony</option>
+                <option value="kwadratowy">kwadratowy</option>
+                <option value="balerina">balerina</option>
+                <option value="zaokrąglony kwadrat">zaokrąglony kwadrat</option>
+            </select>
+        </section>
+        <section id="s3">
+            <h2>Wzór</h2>
+            <div id="res"></div>
+            <input type="number" min="1" max="10">
+        </section>
+        <footer>
+            <p>Autor strony: <a href="https://www.github.com/alanwnuczko">Alan Wnuczko</a></p>
+        </footer>
+    </main>
+    <script src="skrypt.js"></script>
+</body>
+</html>
