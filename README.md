@@ -76,7 +76,7 @@ INF03/
 
 | Opis | Nr | Język | Arkusz | Rozwiązanie |
 |---|---|---|---|---|
-| Gazeta codzienna | 3 | JS | [EE.09-03-23.01-SG](Egzamin_pr/Egzamin_JS/EE09-03-23-01-SG/arkusz_i_baza/EE09-03-23-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/EE09-03-23-01-SG/) |
+| Gazeta codzienna | 3 (EE.09) | JS | [EE.09-03-23.01-SG](Egzamin_pr/Egzamin_JS/EE09-03-23-01-SG/arkusz_i_baza/EE09-03-23-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/EE09-03-23-01-SG/) |
 
 ---
 
