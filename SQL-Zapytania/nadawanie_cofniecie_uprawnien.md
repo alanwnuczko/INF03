@@ -25,7 +25,7 @@ GRANT SELECT ON pracownicy TO jan;
 GRANT SELECT, INSERT, UPDATE ON zamowienia TO martyna;
 
 --Nadanie wszystkich uprawnień użytkownikowi u1 w tabeli wizyta
-GRANT ALL PRIVILEGES ON przychodnia.wizyta TO 'u1'@'localhost';
+GRANT ALL PRIVILEGES ON przychodnia.wizyta FROM 'u1'@'localhost';
 ```
 
 ---
