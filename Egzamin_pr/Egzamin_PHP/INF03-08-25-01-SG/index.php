@@ -16,7 +16,7 @@
         <label for="dataOd">Data odbioru od: </label>
         <input type="date" name="dataOd" id="dataOd">
         <label for="dataDo">Data odbioru do: </label>
-        <input type="date" name="dataDo" id="datDo">
+        <input type="date" name="dataDo" id="dataDo">
         <button type="submit" name="wyszukaj" id="wyszukaj">Wyszukaj</button>
     </form>
     <main>
