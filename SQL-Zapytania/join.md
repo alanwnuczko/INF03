@@ -3,9 +3,7 @@
 > JOIN służy do łączenia wierszy z dwóch lub więcej tabel na podstawie wspólnej kolumny (klucza obcego / klucza głównego).
 ---
 
-## Wprowadzenie
-
-**Przykładowe tabele użyte w całym dokumencie:**
+## Przykładowe tabele użyte w całym dokumencie:
 
 ```sql
 -- Tabela: klienci
@@ -71,7 +69,7 @@ INNER JOIN zamowienia z ON k.id = z.klient_id;
 - Damian (id=4) **nie pojawia się** – brak zamówień.
 - Zamówienie klient_id=5 **nie pojawia się** – brak klienta.
 
-> `JOIN` bez słowa kluczowego to domyślnie `INNER JOIN` – zapis równoważny.
+> `JOIN` bez słowa kluczowego to domyślnie `INNER JOIN`.
 
 ---
 
@@ -105,7 +103,7 @@ LEFT JOIN zamowienia z ON k.id = z.klient_id;
 - Celina i Damian pojawiają się z `NULL` – nie mają zamówień.
 - `LEFT JOIN` = `LEFT OUTER JOIN` (zapis równoważny).
 
-**Typowe zastosowanie – znajdź klientów BEZ zamówień:**
+**Znajdź klientów BEZ zamówień:**
 
 ```sql
 SELECT k.imie
