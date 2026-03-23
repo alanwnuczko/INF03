@@ -87,7 +87,9 @@
     </ul>
 
     <p>
-        <?php echo $przepis; ?>
+        <?php
+            echo $przepis; 
+        ?>
     </p>
 </main>
 
