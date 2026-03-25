@@ -35,6 +35,7 @@ INF03/
 | Opis | Nr | Język | Arkusz | Rozwiązanie |
 |---|---|---|---|---|
 | Gry komputerowe | 1 | PHP | [INF.03-01-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-01-25-06-SG/arkusz_i_baza/INF03-01-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-01-25-06-SG/) |
+| Biblioteka | 3 | PHP | [INF.03-03-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-03-25-06-SG/arkusz_i_baza/INF03-03-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-03-25-06-SG/) |
 | Firma przewozowa | 4 | PHP | [INF.03-04-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-04-25-06-SG/arkusz_i_baza/INF03-04-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-04-25-06-SG/) |
 | Smoki | 8 | PHP + JS | [INF.03-08-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-08-25-06-SG/arkusz_i_baza/INF03-08-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-08-25-06-SG/) |
 | Remonty mieszkania | 9 | PHP | [INF.03-09-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-09-25-06-SG/arkusz_i_baza/INF03-09-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-09-25-06-SG/) |
