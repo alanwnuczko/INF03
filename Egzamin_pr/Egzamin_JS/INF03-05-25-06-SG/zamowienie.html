@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fotografia</title>
+</head>
+<body>
+    <header>
+        <h1>Fotografia artystyczna</h1>
+    </header>
+    <section id="images">
+        <img src="1.jpg" alt="obrazy do sprzedazy" title="1.jpg">
+        <img src="2.jpg" alt="obrazy do sprzedazy" title="2.jpg">
+        <img src="3.jpg" alt="obrazy do sprzedazy" title="3.jpg">
+        <img src="4.jpg" alt="obrazy do sprzedazy" title="4.jpg">
+        <img src="5.jpg" alt="obrazy do sprzedazy" title="5.jpg">
+        <img src="6.jpg" alt="obrazy do sprzedazy" title="6.jpg">
+        <img src="7.jpg" alt="obrazy do sprzedazy" title="7.jpg">
+        <img src="8.jpg" alt="obrazy do sprzedazy" title="8.jpg">
+        <img src="9.jpg" alt="obrazy do sprzedazy" title="9.jpg">
+        <img src="10.jpg" alt="obrazy do sprzedazy" title="10.jpg">
+    </section>
+    <main>
+        <section id="left">
+            <h3>Zamówienie</h3>
+            <label for="obraz">Wybierz obraz:</label>
+            <input type="file" name="obraz" id="obraz" accept="image/jpeg"><br>
+            <label for="kopie">Liczba kopii:</label>
+            <input type="number" name="kopie" id="kopie" min="1"><br>
+            <label><input type="radio" name="papier" value="blyszczacy">Papier błyszczący</label><br>
+            <label><input type="radio" name="papier" value="matowy">Papier matowy</label><br>
+            <button onclick="dodaj()">Dodaj do koszyka</button>
+        </section>
+        <nav>
+            <ul>
+                <li><a href="regulamin.html">Regulamin</a></li>
+                <li><a href="uslugi.html">Usługi</a></li>
+                <li><a href="https://pixabay.com">Zdjęcia</a></li>
+            </ul>
+        </nav>
+        <section id="right">
+            <h3>Koszyk</h3>
+            <div class="koszyk"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Autor strony: <a href="https://www.github.com/alanwnuczko" style="color: unset;">Alan Wnuczko</a></p>
+    </footer> 
+</body>
+<script src="main.js"></script>
+</html>

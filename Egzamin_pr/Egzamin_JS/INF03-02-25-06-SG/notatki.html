@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planer zadań</title>
+</head>
+<body>
+    <aside>
+        <img src="obraz.jpg" alt="notatki">
+    </aside>
+    <header>
+        <h2>Moje zadania</h2>
+    </header>
+    <nav>
+        <input type="text" name="zadanie" id="zadanie" placeholder="Dodaj zadanie...">
+        <button onclick="dodaj()">Dodaj</button>
+    </nav>
+    <main>
+        <ul>
+            <li>Wyprowadzić psa <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+            <li>Gimnastyka <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+            <li>Zakupy <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+            <li>Spacer z kumplem <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+            <li>Odrabianie lekcji z młodszą siostra <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+            <li>Projekt na geografię <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+        </ul>
+    </main>
+    <footer>
+        <h3>Notatki: <a href="https://www.github.com/alanwnuczko" style="color: unset;">Alan Wnuczko</a></h3>
+    </footer>
+</body>
+<script src="main.js"></script>
+</html>

@@ -1,0 +1,65 @@
+*{
+    font-family: 'Cambria';
+}
+
+#left-top, #left-bottom{
+    background-color: #E1BEE7;
+    width: 25%;
+    float: left;
+}
+
+#left-top{
+    height: 400px;
+}
+
+#left-bottom{
+    height: 330px;
+}
+
+#right-top, #right-bottom{
+    width: 75%;
+    font-size: 170%;
+    text-align: center;
+    float: right;
+}
+
+#right-top{
+    background-color: #9C64A6;
+    color: white;
+    height: 150px;
+    letter-spacing: 5px;
+}
+
+#right-bottom{
+    color: indigo;
+    height: 580px;
+}
+
+footer{
+    clear: both;
+    background-color: #9C64A6;
+    color: white;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+img{
+    padding: 4px;
+    margin: 15px;
+}
+
+img:hover{
+    padding: 3px;
+    border: 1px dashed indigo;
+}
+
+.home{
+    padding: 25px;
+}
