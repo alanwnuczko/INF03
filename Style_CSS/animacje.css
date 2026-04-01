@@ -1,0 +1,58 @@
+/* 2. @keyframes – definicja animacji
+   Określa etapy animacji (od 0% do 100%)
+*/
+@keyframes przykladAnimacji {
+    0% {
+        transform: translateX(0);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(50px);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(100px);
+        opacity: 1;
+    }
+}
+
+/* Składnia */
+.box2 {
+    animation: przykladAnimacji 2s ease 0s infinite alternate forwards;
+}
+
+/* Użycie animacji */
+.box {
+    animation-name: przykladAnimacji;   /* nazwa animacji */
+    animation-duration: 2s;             /* czas trwania */
+    animation-timing-function: ease;    /* tempo (ease, linear, ease-in, ease-out) */
+    animation-delay: 0s;                /* opóźnienie startu */
+    animation-iteration-count: infinite; /* ile razy (1, 2, infinite) */
+    animation-direction: alternate;     /* kierunek (normal, reverse, alternate) */
+    animation-fill-mode: forwards;      /* stan po zakończeniu */
+}
+
+/* Najczęściej używane właściwości */
+.element {
+    transform: scale(1.2);      /* powiększenie */
+    transform: rotate(45deg);   /* obrót */
+    transform: translateX(50px);/* przesunięcie */
+    opacity: 0.5;               /* przezroczystość */
+}
+
+/* Pulsowanie */
+@keyframes puls {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.pulsuj {
+    animation: puls 1s infinite;
+}
+
+/* :hover */
+.button:hover {
+    transform: scale(1.1); /* Powiększa przycisk */
+    transition: 0.3s; /* Uruchamia animację puls, czas trwania 1s, bez końca (infinite) */
+}
