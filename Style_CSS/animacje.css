@@ -32,7 +32,7 @@
     animation-fill-mode: forwards;      /* stan po zakończeniu */
 }
 
-/* Najczęściej używane właściwości */
+/* Właściwości */
 .element {
     transform: scale(1.2);      /* powiększenie */
     transform: rotate(45deg);   /* obrót */
