@@ -3,7 +3,7 @@ p{ /* Odwołuje się do wszystkich znaczników <p> na stronie */
     font-size: 30px;
 }
 
-aside{ /* Odwołuje się do wszystkich znaczników <aside> na stronie */
+aside, footer{ /* Odwołuje się do wszystkich znaczników <aside> i <footer> na stronie */
     width: 25%;
     height: 120%; 
 }
