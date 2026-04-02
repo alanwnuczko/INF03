@@ -1,0 +1,31 @@
+p{ /* Odwołuje się do wszystkich znaczników <p> na stronie */
+    color: white;
+    font-size: 30px;
+}
+
+aside, footer{ /* Odwołuje się do wszystkich znaczników <aside> i <footer> na stronie */
+    width: 25%;
+    height: 120%; 
+}
+
+#left, #right{ /* Odwołuje się do znacznikow z id="left" i id="right" */
+    background-color: indigo;
+    height: 600px;
+}
+
+*{ /* Odwołuje się do wszystkich elementów na całej stronie */
+    font-family: 'Garamond';
+    color: white;
+    margin: 0;
+}
+
+.buty{ /* Odwołuje się do znaczników z class="buty" */
+    width: 70%;
+    margin: 15px;
+    padding: 7px;
+    border-radius: 30px;
+}
+
+button:hover{ /* :hover - Po najechaniu myszką */
+    background-color: indigo;
+}

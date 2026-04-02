@@ -1,0 +1,54 @@
+h1{
+    color: white; /* Kolor tekstu */
+    font-family: Arial, Helvetica, sans-serif; /* Nazwa czcionki */
+    font-size: 16px; /* Rozmiar czcionki */
+    font-weight: bold; /* Grubość czcionki (normal, bold, 100-900) */
+    font-style: italic; /* Styl czcionki */
+}
+
+p{
+    line-height: 1.5; /* Wysokość linii (1.5, 24px) */
+    letter-spacing: 2px; /* Odstęp między literami */
+    word-spacing: 4px; /* Odstęp między słowami */
+    text-align: center; /* Wyrównanie tekstu */
+    text-decoration: underline; /* Dekoracja tekstu */
+    text-decoration-color: red; /* Kolor dekoracji tekstu */
+    text-decoration-style: dotted; /* Styl dekoracji (solid, dashed, dotted) */
+    text-transform: uppercase; /* Transformacja tekstu (uppercase, lowercase, capitalize) */
+    text-indent: 20px; /* Wcięcie pierwszej linii */
+}
+
+main{
+    background-color: blanchedalmond; /* Kolor tła */
+    background-image: url(obraz.png); /* Obraz tła */
+
+    width: 20%; /* Szerokość */
+    height: auto; /* Wysokość */
+    min-width: 200px; /* Minimalna szerokość */
+    min-height: 500px; /* Minimalna wysokość */
+
+    margin: 10px; /* Margines zewnętrzny */
+    margin-top: 10px; /* Margines zewnętrzny górny */
+    margin-bottom: 10px; /* Margines zewnętrzny dolny */
+    margin-left: 10px; /* Margines zewnętrzny lewy */
+    margin-right: 10px; /* Margines zewnętrzny prawy */
+
+    padding: 10px; /* Margines wewnętrzny */
+    padding-top: 10px; /* Margines wewnętrzny górny */
+    padding-bottom: 10px; /* Margines wewnętrzny dolny */
+    padding-left: 10px; /* Margines wewnętrzny lewy */
+    padding-right: 10px; /* Margines wewnętrzny prawy */
+}
+
+img{
+    border: 1px dotted black; /* Obramowanie */
+    border-width: 1px; /* Grubość */
+    border-style: dashed; /* Styl obramowania */
+    border-color: red; /* Kolor obramowania */
+    border-top: 1px solid red; /* Tylko góra */
+    border-bottom: 1px solid red; /* Tylko dół */
+    border-right: 1px solid red; /* Tylko prawy */
+    border-left: 1px solid red; /* Tylko lewy */
+    border-radius: 5px; /* Zaokrąglenie rogów */
+    
+}
