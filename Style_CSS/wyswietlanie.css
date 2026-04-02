@@ -1,0 +1,37 @@
+/* Wyświetlanie */
+div{
+    display: block; /* Zajmuje całą szerokość, zaczyna się od nowej linii */
+    display: inline; /* Element w jednej linii, bez width/height */
+    display: grid; /* Układ siatki */
+    display: none; /* Element znika - nie zajmuje miejsca */
+    display: flex; /* Flexbox */
+    flex-direction: row; /* Poziomo */
+    flex-direction: column; /* Column */
+
+    /* Wyśrodkowanie wszystkiego:
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+/* Widoczność */
+div{
+    visibility: visible; /* Element widoczny */
+    visibility: hidden; /* Element niewidoczny - nadal zajmuje miejsce */
+}
+
+/* Przezroczystość */
+div{
+    opacity: 1; /* W pełni widoczny */
+    opacity: 0.5; /* 50% przezroczystosci */
+    opacity: 0; /* Niewidoczny - nadal zajmuje miejsce */
+}
+
+/* Overflow */
+div{
+    overflow: visible; /* Zawartość nie mieszcząca się w elemencie wychodzi poza element */
+    overflow: hidden; /* Nadmiar ukryty */
+    overflow: scroll; /* Pokazuje scroll */
+    overflow: auto; /* Scroll pojawia się tylko gdy potrzeba */
+}
