@@ -1,0 +1,19 @@
+img{
+    width: 200px;
+    height: 100px;
+
+    box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.5);
+    /* Składnia:
+    text-shadow: offset-x offset-y blur-radius color;
+    offset-x - przesunięcie poziome
+    offset-y - przesunięcie pionowe
+    blur radius - rozmycie
+    color - kolor cienia */
+}
+
+header{
+    height: 50px;
+    width: auto;
+
+    box-shadow: 1px 1px 2px black;
+}
