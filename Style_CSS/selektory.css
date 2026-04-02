@@ -25,3 +25,7 @@ aside, footer{ /* Odwołuje się do wszystkich znaczników <aside> i <footer> na
     padding: 7px;
     border-radius: 30px;
 }
+
+button:hover{ /* :hover - Po najechaniu myszką */
+    background-color: indigo;
+}
