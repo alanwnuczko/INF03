@@ -15,7 +15,19 @@ INF03/
     ├── SQL_Zapytania/
     └── Style_CSS/
 ```
+
 ---
+
+## Przykłady
+
+- [HTML](HTML/)
+- [CSS](Style_CSS/)
+- [JavaScript](JS/)
+- [PHP](PHP_Skrypty/)
+- [SQL](SQL_Zapytania/)
+
+---
+
 ## Egzaminy Praktyczne
 
 ### 2026
