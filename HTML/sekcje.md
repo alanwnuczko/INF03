@@ -65,3 +65,65 @@
   <a href="mailto:jan@email.com">jan@email.com</a>
 </address>
 ```
+
+### Przykład
+
+![Układ bloków](md_assets/uklad_blokow.png)
+
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Przykład</title>
+    <style>
+        main{
+            display: flex;
+        }
+
+        #left{
+            width: 30%;
+        }
+
+        #right1{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #right2{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Treść bloku nagłówkowego -->
+    </header>
+
+    <section id="sekcja_obrazow">
+        <!-- Treść sekcji obrazów -->
+    </section>
+
+    <main>
+        <section id="left">
+            <!-- Treść sekcji lewej -->
+        </section>
+
+        <div id="right1">
+            <nav>
+                <!-- Treść bloku nawigacyjnego -->
+            </nav>
+
+            <section id="right2">
+                <!-- Treść sekcji prawej -->
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Treść Stopki -->
+    </footer>
+</body>
+</html>
+```
