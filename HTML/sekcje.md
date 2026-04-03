@@ -36,7 +36,7 @@
 ```html
 <section>
   <h2>Sekcja tematyczna</h2>
-  <p>Treść powiązana tematycznie</p>
+  <p>Treść sekcji</p>
 </section>
 ```
  
@@ -52,7 +52,7 @@
 ```html
 <aside>
   <h3>Sekcja boczna</h3>
-  <p>Powiązane linki, dodatkowe informacje.</p>
+  <p>Treść sekcji bocznej</p>
 </aside>
 ```
  
