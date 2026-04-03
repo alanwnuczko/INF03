@@ -20,11 +20,11 @@ INF03/
 
 ## Przykłady
 
-- [HTML](HTML/)
-- [CSS](Style_CSS/)
-- [JavaScript](JS/)
-- [PHP](PHP_Skrypty/)
-- [SQL](SQL_Zapytania/)
+[![HTML](https://img.shields.io/badge/HTML-folder-orange)](HTML/)
+[![CSS](https://img.shields.io/badge/CSS-folder-blue)](Style_CSS/)
+[![JS](https://img.shields.io/badge/JS-folder-yellow)](JS/)
+[![PHP](https://img.shields.io/badge/PHP-folder-purple)](PHP_Skrypty/)
+[![SQL](https://img.shields.io/badge/SQL-folder-lightgrey)](SQL_Zapytania/)
 
 ---
 
