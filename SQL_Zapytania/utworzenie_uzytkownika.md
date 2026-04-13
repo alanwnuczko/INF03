@@ -15,10 +15,21 @@ CREATE USER 'jolanta2'@'localhost' IDENTIFIED BY 'haslo!234';
 CREATE USER 'u1'@'localhost' IDENTIFIED BY 'hAsl0';
 ```
 
-#
 
-**Sprawdzenie istniejących użytkowników:**
+## Sprawdzenie istniejących użytkowników:
 ```sql
 --Zwraca użytkowników i serwer na którym jest
 SELECT user,  host FROM mysql.user;
+```
+
+
+## Usunięcie użytkownika w bazie danych
+Składnia:
+```sql
+DROP USER 'nazwa_uzytkownika'@'serwer';
+```
+Na przykład:
+```sql
+--Usunięcie użytkownika jolanta2;
+DROP USER 'jolanta2'@'localhost';
 ```

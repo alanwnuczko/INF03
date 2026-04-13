@@ -1,4 +1,4 @@
-# JOIN – Łączenie tabel
+# JOIN
 
 > JOIN służy do łączenia wierszy z dwóch lub więcej tabel na podstawie wspólnej kolumny (klucza obcego / klucza głównego).
 ---
@@ -22,7 +22,7 @@ CREATE TABLE zamowienia (
 );
 ```
 
-**Dane testowe:**
+Przykładowe dane:
 
 | klienci.id | imie    | miasto   |
 |-----------|---------|----------|
@@ -66,16 +66,14 @@ INNER JOIN zamowienia z ON k.id = z.klient_id;
 | Anna   | Mysz    | 89    |
 | Bartek | Monitor | 1100  |
 
-- Damian (id=4) **nie pojawia się** – brak zamówień.
-- Zamówienie klient_id=5 **nie pojawia się** – brak klienta.
-
-> `JOIN` bez słowa kluczowego to domyślnie `INNER JOIN`.
+- Damian (id=4) nie pojawia się – brak zamówień.
+- Zamówienie klient_id=5 nie pojawia się – brak klienta.
 
 ---
 
 ## LEFT JOIN
 
-Zwraca **wszystkie wiersze z lewej tabeli** oraz dopasowane wiersze z prawej.  
+Zwraca wszystkie wiersze z lewej tabeli oraz dopasowane wiersze z prawej.  
 Gdzie nie ma dopasowania – wartości prawej tabeli to `NULL`.
 
 ```
@@ -150,28 +148,6 @@ RIGHT JOIN zamowienia z ON k.id = z.klient_id;
 
 ---
 
-## SELF JOIN
-
-Tabela łączona **sama ze sobą** – wymaga aliasów.
-
-**Przykład:** znajdź pracowników i ich przełożonych (tabela `pracownicy` z kolumną `przelozony_id`).
-
-```sql
-CREATE TABLE pracownicy (
-    id            INT PRIMARY KEY,
-    imie          VARCHAR(50),
-    przelozony_id INT
-);
-```
-
-```sql
-SELECT p.imie AS pracownik, szef.imie AS przelozony
-FROM pracownicy p
-LEFT JOIN pracownicy szef ON p.przelozony_id = szef.id;
-```
-
----
-
 ## Porównanie typów JOIN
 
 | Typ              | Lewa tabela | Prawa tabela | Opis                                      |
@@ -184,7 +160,7 @@ LEFT JOIN pracownicy szef ON p.przelozony_id = szef.id;
 
 ## Przykłady
 
-### JOIN z warunkiem WHERE
+### JOIN z WHERE
 
 ```sql
 -- Zamówienia klientów z Gdańska powyżej 500 zł
@@ -194,7 +170,7 @@ INNER JOIN zamowienia z ON k.id = z.klient_id
 WHERE k.miasto = 'Gdańsk' AND z.kwota > 500;
 ```
 
-### JOIN z GROUP BY i agregacją
+### JOIN z GROUP BY
 
 ```sql
 -- Suma zamówień na klienta
@@ -205,7 +181,7 @@ GROUP BY k.id, k.imie
 ORDER BY suma DESC;
 ```
 
-### Aliasy – skrócona składnia
+### Aliasy
 
 ```sql
 SELECT k.imie, z.produkt
