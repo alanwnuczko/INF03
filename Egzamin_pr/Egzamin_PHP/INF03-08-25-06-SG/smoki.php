@@ -11,9 +11,9 @@
         <h2>Poznaj smoki!</h2>
     </header>
     <nav>
-        <section id="navBaza" onclick="functionBaza()">Baza</section>
-        <section id="navOpisy" onclick="functionOpisy()">Opisy</section>
-        <section id="navGaleria" onclick="functionGaleria()">Galeria</section>
+        <section id="navbaza" onclick="pokazSekcje('baza')">Baza</section>
+        <section id="navopisy" onclick="pokazSekcje('opisy')">Opisy</section>
+        <section id="navgaleria" onclick="pokazSekcje('galeria')">Galeria</section>
     </nav>
     <main>
         <section id=baza>
