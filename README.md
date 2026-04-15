@@ -12,6 +12,7 @@ INF03/
     │   └── Egzamin_PHP/
     ├── JS/
     ├── PHP_Skrypty/
+    ├── Python/
     ├── SQL_Zapytania/
     └── Style_CSS/
 ```
@@ -25,6 +26,7 @@ INF03/
 [![JS](https://img.shields.io/badge/JS-folder-yellow)](JS/)
 [![PHP](https://img.shields.io/badge/PHP-folder-purple)](PHP_Skrypty/)
 [![SQL](https://img.shields.io/badge/SQL-folder-lightgrey)](SQL_Zapytania/)
+[![PYTHON](https://img.shields.io/badge/Python-folder-lightblue)](Python/)
 
 ---
 
