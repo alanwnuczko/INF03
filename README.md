@@ -12,6 +12,7 @@ INF03/
     │   └── Egzamin_PHP/
     ├── JS/
     ├── PHP_Skrypty/
+    ├── Python/
     ├── SQL_Zapytania/
     └── Style_CSS/
 ```
