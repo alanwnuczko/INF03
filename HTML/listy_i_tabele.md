@@ -75,8 +75,8 @@ Wynik:
 </table>
 ```
 Wynik:
-> | Komórka 1 | Komórka 2 |
-> | Komórka 3 | Komórka 4 |
+> | Komórka 1 | Komórka 2 |  
+> | Komórka 3 | Komórka 4 |  
  
  
 ### Nagłówek kolumny `<th>`
