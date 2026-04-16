@@ -54,9 +54,9 @@ Wynik:
 <p>Pierwsza linia<br>Druga linia<br>Trzecia linia</p>
 ```
 Wynik:
-> Pierwsza linia
-> Druga linia
-> Trzecia linia
+> Pierwsza linia  
+> Druga linia  
+> Trzecia linia  
 
 ---
 
