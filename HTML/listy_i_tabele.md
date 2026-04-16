@@ -10,10 +10,10 @@
 </ul>
 ```
 Wynik:
-> Mleko
-> Jajka
-> Chleb
-> Masło
+> Mleko  
+> Jajka  
+> Chleb  
+> Masło  
 
 
 ### Lista uporządkowana `<ol>`
