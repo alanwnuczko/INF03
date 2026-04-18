@@ -1,5 +1,5 @@
 *{
-    font-family: 'Century Gothic', 'Arial';
+    font-family: 'Century Gothic', Arial;
 }
 
 body{
@@ -7,57 +7,47 @@ body{
 }
 
 header, footer{
-    background-color: sienna;
+    background-color: Sienna;
     color: white;
     padding: 5px;
     text-align: center;
     font-size: 130%;
 }
 
-main > section#left{
-    float: left;
+.lewa{
     background-color: navajowhite;
     margin: 10px;
     padding: 20px;
     width: 35%;
     height: 400px;
     box-shadow: 5px 5px 10px dimgray;
+    float: left;
 }
 
 nav{
-    float: right;
     width: 50%;
     height: 50px;
-}
-
-main{
-    clear: both;
-}
-
-main > section#right{
     float: right;
+}
+
+.prawa{
     width: 50%;
     height: 420px;
     overflow: auto;
-}
-
-.pozycja {
-    clear: both;
-    overflow: hidden;
-    margin-bottom: 10px;
+    float: right;
 }
 
 input, button{
     margin-top: 20px;
 }
 
-ul > li{
+li{
     display: inline-block;
 }
 
 img{
-    float: left;
     width: 10%;
+    float: left;
 }
 
 a{
@@ -66,7 +56,7 @@ a{
 }
 
 a:hover{
-    color: #4c1900;
+    color: #4C1900
 }
 
 footer{
