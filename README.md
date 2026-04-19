@@ -55,6 +55,7 @@ INF03/
 | Biblioteka | 3 | PHP | [INF.03-03-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-03-25-06-SG/arkusz_i_baza/INF03-03-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-03-25-06-SG/) |
 | Firma przewozowa | 4 | PHP | [INF.03-04-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-04-25-06-SG/arkusz_i_baza/INF03-04-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-04-25-06-SG/) |
 | Fotografia | 5 | JS | [INF.03-05-25.06-SG](Egzamin_pr/Egzamin_JS/INF03-05-25-06-SG/arkusz_i_baza/INF03-05-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-05-25-06-SG/) |
+| Wycieczki | 7 | PHP | [INF.03-07-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-07-25-06-SG/arkusz_i_baza/INF03-07-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-07-25-06-SG/) |
 | Smoki | 8 | PHP + JS | [INF.03-08-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-08-25-06-SG/arkusz_i_baza/INF03-08-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-08-25-06-SG/) |
 | Remonty mieszkania | 9 | PHP | [INF.03-09-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-09-25-06-SG/arkusz_i_baza/INF03-09-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-09-25-06-SG/) |
 | Przychodnia medica | 12 | PHP | [INF.03-12-25.06-SG](Egzamin_pr/Egzamin_PHP/INF03-12-25-06-SG/arkusz_i_baza/INF03-12-25-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-12-25-06-SG/) |
