@@ -2,7 +2,7 @@
 krotka = (32, 64)
 print(krotka[0]) # Wynik: 32
 
-# Zbiory - Kolekjcja nieuporządkowanych i niepowtarzalnych elementów
+# Zbiory - Kolekcja nieuporządkowanych i niepowtarzalnych elementów
 A = {1, 2, 3, 4,}
 B = {3, 4, 5, 6}
 
