@@ -1,6 +1,7 @@
 # JOIN
 
 > JOIN służy do łączenia wierszy z dwóch lub więcej tabel na podstawie wspólnej kolumny (klucza obcego / klucza głównego).
+> https://www.youtube.com/watch?v=G3lJAxg1cy8
 ---
 
 ## Przykładowe tabele użyte w całym dokumencie:
