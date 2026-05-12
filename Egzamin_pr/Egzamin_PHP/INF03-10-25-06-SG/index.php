@@ -41,13 +41,10 @@
                 <h2>Zapisy na kursy</h2>
                 <label for="imie">Imie</label><br>
                 <input type="text" name="imie" id="imie"><br>
-
                 <label for="nazwisko">Nazwisko</label><br>
                 <input type="text" name="nazwisko" id="nazwisko"><br>
-            
                 <label for="wiek">Wiek</label><br>
                 <input type="number" name="wiek" id="wiek"><br>
-
                 <label for="rodzaj">Rodzaj kursu</label><br>
                 <select name="rodzaj" id="rodzaj">
                     <?php
@@ -58,16 +55,32 @@
                         }
                     ?>
                 </select><br>
-                <button type="submit">Dodaj dane</button>
-            </form>
+                <button type="submit">Dodaj dane</button><br>
+                <?php
+                    if($_POST["imie"] == "" || $_POST["nazwisko"] == "" || $_POST["wiek"] == "" || $_POST["rodzaj"] == ""){
+                        echo"Wprowadź wszystkie dane";
+                    }
+                    else{
+                        $imie = $_POST["imie"];
+                        $nazwisko = $_POST["nazwisko"];
+                        $wiek = $_POST["wiek"];
+                        $rodzaj = $_POST["rodzaj"];
 
-            <!-- Dodać skrypt 3 -->
+                        // Zapytanie 3: INSERT INTO `uczestnicy` (`imie`, `nazwisko`, `wiek`) VALUES ('Tadeusz', 'Wysocki', '36');
+
+                        $query = mysqli_query($pol, "INSERT INTO `uczestnicy` (`imie`, `nazwisko`, `wiek`) VALUES ('$imie', '$nazwisko', $wiek)");
+                        echo"Dane uczestnika $imie $nazwisko zostały dodane";
+
+                        mysqli_close($pol);
+                    }
+                ?>
+            </form>
 
         </section>
     </main>
 
     <footer>
-        <p>Stronę wykonał: <a style="text-decoration: none;" href="https://www.github.com/alanwnuczko" >Alan Wnuczko</a></p>
+        <p>Stronę wykonał: <a style="text-decoration: none;" href="https://www.github.com/alanwnuczko">Alan Wnuczko</a></p>
     </footer>
 </body>
 </html>
