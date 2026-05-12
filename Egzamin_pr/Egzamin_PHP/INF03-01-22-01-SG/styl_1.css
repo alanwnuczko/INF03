@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #F6E5DC;
+    font-family: Verdana;
+}
+
+header{
+    background-color: #2F180C;
+    text-align: center;
+    color: khaki;
+    height: 60px;
+}
+
+#left{
+    width: 60%;
+    float: left;
+}
+
+#right{
+    font-size: 150%;
+    padding: 70px;
+    float: right;
+}
+
+#bottom{
+    background-color: #D0B6A8;
+    text-align: center;
+    padding: 30px;
+    clear: both;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+footer{
+    margin-top: 0;
+    background-color: #2F180C;
+    color: khaki;
+    height: 60px;
+    clear: both;
+}
+
+img{
+    height: 350px;
+}
+
+#btn_rezerwuj, #btn_wyczysc{
+    margin: 10px;
+    padding: 5px;
+    background-color: #2F180C;
+    color: khaki;
+}
