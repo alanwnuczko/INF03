@@ -85,6 +85,8 @@
 
                     echo"<h3>" . $result[0] . " stopni</h3>";
                 }
+
+                mysqli_close($pol);
             ?>
         </section>
     </main>
