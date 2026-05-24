@@ -73,6 +73,7 @@ INF03/
 | Kalendarze | 3 | PHP | [INF.03-03-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-03-25-01-SG/arkusz_i_baza/INF03-03-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-03-25-01-SG/) |
 | Hurtownia z obuwiem | 4 | PHP | [INF.03-04-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-04-25-01-SG/arkusz_i_baza/INF03-04-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-04-25-01-SG/) |
 | Szkolenia | 5 | PHP | [INF.03-05-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-05-25-01-SG/arkusz_i_baza/INF03-05-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-05-25-01-SG/) |
+| Systemy Liczbowe | 6 | JS | [INF.03-06-25.01-SG](Egzamin_pr/Egzamin_JS/INF03-06-25-01-SG/arkusz_i_baza/INF03-06-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-06-25-01-SG/) |
 | Mieszalnia farb | 8 | PHP | [INF.03-08-25.01-SG](Egzamin_pr/Egzamin_PHP/INF03-08-25-01-SG/arkusz_i_baza/INF03-08-25-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-08-25-01-SG/) |
 
 ---
