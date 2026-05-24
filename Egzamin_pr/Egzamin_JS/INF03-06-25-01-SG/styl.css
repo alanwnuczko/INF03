@@ -1,0 +1,56 @@
+body{
+    font-family: Georgia;
+    color: white;
+    margin: 0;
+}
+
+header, footer{
+    background-color: #824555;
+    text-align: center;
+    padding: 20px;
+}
+
+#left, #center{
+    width: 30%;
+    height: 350px;
+}
+
+#left{
+    background-color: #A26470;
+    float: left;
+}
+
+#center{
+    background-color: #824555;
+    float: left;
+}
+
+#right{
+    background-color: #A26470;
+    width: 40%;
+    height: 350px;
+    overflow: auto;
+    float: right;
+}
+
+img{
+    float: left;
+    width: 50px;
+}
+
+table, p, dl{
+    padding: 20px;
+}
+
+dl{
+    padding-top: 20px;
+}
+
+td, th{
+    border: solid 3px #824555;
+    padding: 5px;
+}
+
+footer{
+    clear: both;
+}
