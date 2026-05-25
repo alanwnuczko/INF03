@@ -5,7 +5,7 @@ SELECT imie, nazwisko FROM osoby WHERE imie LIKE "A%";
 
 kw2:
 ```sql
-SELECT zadanie, data FROM zadania WHERE zadanie LIKE "%mebli%";
+SELECT zadanie, data FROM zadania WHERE zadanie LIKE "%mebli%" ORDER BY data;
 ```
 
 kw3:
