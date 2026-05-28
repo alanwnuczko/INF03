@@ -37,7 +37,7 @@ $result = $conn -> query($sql);
                 echo"</tr>";
             }
         }
-        $conn->close();
+        mysqli_close($conn);
         ?>
     </table>
 </body>
