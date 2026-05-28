@@ -57,6 +57,8 @@
                         echo" </span>";
                     }
                 }
+
+                mysqli_close($conn);
                 ?>
             </div>
         </section>
