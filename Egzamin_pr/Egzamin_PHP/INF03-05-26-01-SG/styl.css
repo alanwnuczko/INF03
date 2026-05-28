@@ -1,0 +1,64 @@
+*{
+    font-family: Tahoma;
+}
+
+body{
+    margin: 0;
+}
+
+header, footer{
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+}
+
+#left, #right{
+    width: 50%;
+    height: 500px;
+}
+
+#left{
+    background-color: lightsalmon;
+    float: left;
+}
+
+#right{
+    background-color: darksalmon;
+    float: right;
+}
+
+footer{
+    clear: both;
+}
+
+h1, h2, h3{
+    text-align: center;
+}
+
+table, td{
+    border: solid 1px maroon;
+}
+
+table{
+    width: 85%;
+    border-collapse: collapse;
+    margin: auto;
+}
+
+ol{
+    list-style: none;
+}
+
+#button{
+    background-color: maroon;
+    color: white;
+    margin-left: 20px;
+    padding: 10px;
+    border: 0;
+    border-radius: 20px;
+}
+
+#button:hover{
+    background-color: white;
+    color: maroon;
+}
