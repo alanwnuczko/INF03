@@ -49,24 +49,19 @@
             </form>
             <h4>Koszt wycieczki</h4>
             <?php
-                if($_SERVER['REQUEST_METHOD'] === 'POST'){
+                if(isset($_POST['cena'])){
                     $miejsce = $_POST['miejsce_wycieczki'];
-                    $liczba_doroslych = max(0, (int)$_POST['liczba_doroslych']);
-                    $liczba_dzieci = max(0, (int)$_POST['liczba_dzieci']);
+                    $dorosli = $_POST['liczba_doroslych'];
+                    $dzieci = $_POST['liczba_dzieci'];
                     $termin = $_POST['termin'];
 
-                    if($stmt = $pol -> prepare("SELECT cena FROM miejsca WHERE nazwa = ?")){
-                        $stmt -> bind_param("s", $miejsce);
-                        if($stmt -> execute()){
-                            $stmt -> bind_result($cena);
-                            if($stmt -> fetch()){
-                                $koszt = $cena * $liczba_doroslych + ($cena * 0.5 * $liczba_dzieci);
-                                echo'<p>W dniu: ' . $termin . '</p>';
-                                echo'<p>' . $koszt . ' złotych</p>';
-                            }
-                        }
-                            $stmt -> close();
-                    }
+                    $query = mysqli_query($pol, "SELECT cena FROM miejsca WHERE nazwa = '$miejsce'");
+                    $row = mysqli_fetch_assoc($query);
+
+                    $koszt = $row['cena'] * $dorosli + $row['cena'] * 0.5 * $dzieci;
+
+                    echo "<p>W dniu: $termin</p>";
+                    echo "<p>$koszt złotych</p>";
                 }
             ?>
         </aside>
@@ -75,13 +70,8 @@
             <?php
                 $query = mysqli_query($pol, "SELECT nazwa, cena, link_obraz FROM miejsca WHERE link_obraz LIKE '0%'");
 
-                while ($row = $query->fetch_assoc()) {
-                    echo '
-                    <div class="wycieczka">
-                    <img src="' . htmlspecialchars($row['link_obraz']) . '" alt="zdjęcie z wycieczki">
-                    <h2>' . htmlspecialchars($row['nazwa']) . '</h2>
-                    <p>' . number_format((float)$row['cena'], 2, ',', ' ') . ' zł</p>
-                    </div>';
+                while($row = mysqli_fetch_assoc($query)){
+                echo "<div class='wycieczka'><img src='" . $row['link_obraz'] . "' alt='zdjęcie z wycieczki'><h2>" . $row['nazwa'] . "</h2><p>" . $row['cena'] . " zł</p></div>";
                 }
 
                 mysqli_close($pol);

@@ -36,32 +36,19 @@
                 if(isset($_POST['wyszukaj'])){
                     $dataOd = $_POST['dataOd'];
                     $dataDo = $_POST['dataDo'];
-                    $query = "SELECT nazwisko, imie, zamowienia.id, kod_koloru, pojemnosc, data_odbioru FROM klienci JOIN zamowienia ON klienci.id = id_klienta WHERE data_odbioru >= '$dataOd' AND data_odbioru <= '$dataDo' ORDER BY data_odbioru";
-                    $result = $pol -> query($query);
+                    $query = mysqli_query($pol,"SELECT nazwisko, imie, zamowienia.id, kod_koloru, pojemnosc, data_odbioru FROM klienci JOIN zamowienia ON klienci.id = id_klienta WHERE data_odbioru >= '$dataOd' AND data_odbioru <= '$dataDo' ORDER BY data_odbioru");
 
-                    while($row = $result -> fetch_assoc()){
-                        echo"<tr>";
-                        echo"<td>" . $row["id"] . "</td>";
-                        echo"<td>" . $row["nazwisko"] . "</td>";
-                        echo"<td>" . $row["imie"] . "</td>";
-                        echo"<td style='background-color: #" . $row["kod_koloru"] . ";'>" . $row["kod_koloru"] . "</td>";
-                        echo"<td>" . $row["pojemnosc"] . "</td>";
-                        echo"<td>" . $row["data_odbioru"] . "</td>";
-                        echo"</tr>";
+                    while($row = mysqli_fetch_assoc($query)){
+                        echo "<tr><td>" . $row["id"] . "</td><td>" . $row["nazwisko"] . "</td><td>" . $row["imie"] . "</td><td style='background-color:#" . $row["kod_koloru"] . ";'>" . $row["kod_koloru"] . "</td>";
+                        echo "<td>" . $row["pojemnosc"] . "</td><td>" . $row["data_odbioru"] . "</td></tr>";
                     }
                 }
                 else{
-                    $query = "SELECT nazwisko, imie, zamowienia.id, kod_koloru, pojemnosc, data_odbioru FROM klienci JOIN zamowienia ON klienci.id = id_klienta ORDER BY data_odbioru";
-                    $result = $pol -> query($query);
-                    while ($row = $result->fetch_assoc()) {
-                            echo "<tr>";
-                            echo "<td>" . $row["id"] . "</td>";
-                            echo "<td>" . $row["nazwisko"] . "</td>";
-	                        echo "<td>" . $row["imie"] . "</td>";
-	                        echo "<td style='background-color: #".$row["kod_koloru"].";'>" . $row["kod_koloru"] . "</td>";
-	                        echo "<td>" . $row["pojemnosc"] . "</td>";
-	                        echo "<td>" . $row["data_odbioru"] . "</td>";
-                            echo "</tr>";
+                    $query = mysqli_query($pol, "SELECT nazwisko, imie, zamowienia.id, kod_koloru, pojemnosc, data_odbioru FROM klienci JOIN zamowienia ON klienci.id = id_klienta ORDER BY data_odbioru");
+                    
+                    while ($row = mysqli_fetch_assoc($query)) {
+                            echo "<tr><td>" . $row["id"] . "</td><td>" . $row["nazwisko"] . "</td><td>" . $row["imie"] . "</td><td style='background-color: #" .$row["kod_koloru"].";'>" . $row["kod_koloru"] . "</td>";
+	                        echo "<td>" . $row["pojemnosc"] . "</td><td>". $row["data_odbioru"] . "</td></tr>";
                     }
 	            }
                 mysqli_close($pol);
