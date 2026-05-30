@@ -26,7 +26,7 @@ $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_assoc($result))
 {
-    echo"<p>{$row['id']} - {$row['imie']} - {$row['nazwisko']}</p>";
+    echo"<tr><td> . $row['id'] . </td><td> . $row['imie'] . </td><td> . $row['nazwisko'] . </td></tr>";
 }
 mysqli_close($conn);
 ```
@@ -53,7 +53,7 @@ mysqli_close($conn);
 
 **Usuwanie rekordu - DELETE**
 ```php
-$conn = mysqli_connect("localhost","root","","baza_danych");
+$conn = mysqli_connect("localhost", "root", " ", "baza_danych");
 mysqli_query($conn, "DELETE FROM usluga WHERE cena > 10");
 mysqli_close($conn);
 ```
