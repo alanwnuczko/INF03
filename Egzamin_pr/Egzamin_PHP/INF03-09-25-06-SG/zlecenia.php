@@ -32,22 +32,17 @@
                 </form>
                 <?php
                     $conn = mysqli_connect("localhost", "root", "", "remonty");
-                    
-                    $query = "SELECT nazwa_firmy, liczba_pracownikow FROM wykonawcy WHERE liczba_pracownikow >= ?";
-                    if (isset($_POST['szukaj_firm'])) {
-                        $stmt = $conn->prepare($query);
-                        $stmt->bind_param("i", $_POST['pracownikow']);
-                        $stmt->execute();
-                        $result = $stmt->get_result();
 
-                        echo "<ul>";
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<li>" . htmlspecialchars($row['nazwa_firmy']) . ", " . $row['liczba_pracownikow'] . " pracowników</li>";
+                    if(isset($_POST['szukaj_firm'])){
+                    $query = mysqli_query($conn, "SELECT nazwa_firmy, liczba_pracownikow FROM wykonawcy WHERE liczba_pracownikow >= $_POST[pracownikow]");
+
+                        while($row = mysqli_fetch_assoc($query)){
+                            echo $row['nazwa_firmy'] . ", " . $row['liczba_pracownikow'] . " pracowników<br>";
                         }
-                        echo "</ul>";
-                        $stmt->close();
                     }
-                ?>
+
+mysqli_close($conn);
+?>
             </section>
 
             <section id="srodek">
@@ -55,9 +50,9 @@
                 <form action="zlecenia.php" method="post">
                     <select name="miasto" id="miasto">
                         <?php
-                            $query = "SELECT DISTINCT miasto FROM klienci ORDER BY miasto;";
+                            $query = mysqli_query($conn, "SELECT DISTINCT miasto FROM klienci ORDER BY miasto;");
                             $result = $conn->query($query);
-                            while ($row = $result->fetch_assoc()) {
+                            while ($row = mysqli_fetch_assoc($query)) {
                                 echo '<option value="' . $row['miasto'] . '">' . $row['miasto'] . '</option>';
                             }
                         ?>
@@ -67,20 +62,19 @@
                     <button type="submit" name="szukaj_klientow">Szukaj klientów</button>
                 </form>
                 <?php
-                    $query = "SELECT imie, cena FROM klienci JOIN zlecenia USING(id_klienta) WHERE miasto = ? AND rodzaj = ?";
-                    if (isset($_POST['szukaj_klientow'])) {
-                        $stmt = $conn->prepare($query);
-                        $stmt->bind_param("ss", $_POST['miasto'], $_POST['usluga']);
-                        $stmt->execute();
-                        $result = $stmt->get_result();
+                    if(isset($_POST['szukaj_klientow'])){
+                        $miasto = $_POST['miasto'];
+                        $usluga = $_POST['usluga'];
+
+                        $query = mysqli_query($conn, "SELECT imie, cena FROM klienci JOIN zlecenia USING(id_klienta) WHERE miasto='$miasto' AND rodzaj='$usluga'");
 
                         echo "<ul>";
-                        while ($row = $result->fetch_assoc()) {
-                            echo "<li>" . htmlspecialchars($row['imie']) . " - " . $row['cena'] . "</li>";
+                        while($row = mysqli_fetch_assoc($query)){
+                            echo "<li>".$row['imie']." - ".$row['cena']."</li>";
                         }
                         echo "</ul>";
-                        $stmt->close();
                     }
+
                     mysqli_close($conn);
                 ?>
             </section>
