@@ -1,16 +1,12 @@
-main{
-    display: flex;
-}
-
 body{
     background-color: #FFCC99;
-    font-family: 'Garamond';
+    font-family: Garamond;
     text-align: center;
 }
 
 header, footer{
-    color: white;
     background-color: darkgreen;
+    color: white;
     padding: 30px;
     font-size: 140%;
 }
@@ -24,21 +20,26 @@ nav{
 section#left{
     width: 70%;
     height: 500px;
+    float: left;
 }
 
-section#right{
+#right{
     background-color: mediumseagreen;
     width: 30%;
     height: 500px;
     text-align: left;
+    float: left;
 }
 
 table{
-    border: 1px dashed darkgreen;
-    margin: 30px auto;
+    border: dashed 1px darkgreen;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-table > tr > th, table > tr > td{
+td, th{
     padding: 5px;
 }
 
@@ -46,12 +47,14 @@ a{
     color: white;
 }
 
-ul{
+li{
     list-style-type: circle;
 }
 
 tr:hover{
     background-color: darkgreen;
-    color: white;
 }
 
+footer{
+    clear: both;
+}
