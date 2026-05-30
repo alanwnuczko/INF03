@@ -20,10 +20,9 @@
         <?php
             $pol = mysqli_connect("localhost", "root", "", "firma");
 
-            $query = "SELECT data, temat FROM szkolenia ORDER BY data";
-            $result = $pol -> query($query);
+            $query = mysqli_query($pol, "SELECT data, temat FROM szkolenia ORDER BY data");
 
-            while($row = $result -> fetch_assoc()){
+            while($row = mysqli_fetch_assoc($query)){
                 echo"<p>" . $row["data"] . " " . $row['temat'] . "</p>";
                 file_put_contents("harmonogram.txt", $row["data"] . " " . $row["temat"] . PHP_EOL, FILE_APPEND);
             }
