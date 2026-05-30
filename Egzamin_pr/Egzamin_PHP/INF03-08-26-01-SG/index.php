@@ -21,19 +21,17 @@
         $wynik = mysqli_query($conn, "SELECT id, nazwa FROM szczyty ORDER BY wysokosc DESC");
         while ($row = mysqli_fetch_array($wynik)){
             echo '<span><a href="szczyty.php?id=' . $row['id'] . '">' . $row['nazwa'] . '</a></span>';
-    }
-    mysqli_close($conn);
+        }
     ?>
 </main>
 
 <section>
     <?php
-        $conn = mysqli_connect("localhost", "root", "", "korona");
         $wynik = mysqli_query($conn, "SELECT plik, nazwa FROM szczyty LIMIT 10");
         while ($row = mysqli_fetch_array($wynik)){
             echo '<img src="' . $row['plik'] . '" alt="' . $row['nazwa'] . '" class="miniatury">';
-    }
-    mysqli_close($conn);
+        }
+        mysqli_close($conn);
     ?>
 </section>
 
