@@ -1,6 +1,10 @@
 *{
     text-align: center;
-    font-family: 'Georgia';
+    font-family: Georgia;
+}
+
+body{
+    margin: 0;
 }
 
 header, footer{
@@ -11,16 +15,18 @@ header, footer{
 
 nav{
     width: 20%;
+    display: flex;
+    flex-direction: column;
     float: left;
 }
 
-nav > section{
+#Baza, #Opisy, #Galeria{
     background-color: #FFAEA5;
     height: 170px;
     font-size: 200%;
 }
 
-nav > section:first-child{
+#Baza{
     background-color: mistyrose;
 }
 
@@ -29,17 +35,16 @@ main{
     width: 80%;
     height: 510px;
     overflow: auto;
-    float: left;
 }
 
-main > section:not(:first-child){
+#section2, #section3{
     display: none;
 }
 
 table{
     margin: auto;
     width: 60%;
-    border: 1px dashed indigo;
+    border: dashed 1px indigo;
 }
 
 select, button{
@@ -53,8 +58,4 @@ dt{
 
 dt:hover{
     font-size: 180%;
-}
-
-footer{
-    clear: both;
 }
