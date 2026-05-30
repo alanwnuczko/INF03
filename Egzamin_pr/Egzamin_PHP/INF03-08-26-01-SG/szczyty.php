@@ -17,9 +17,9 @@
 
 <main>
     <?php
+        $conn = mysqli_connect("localhost", "root", "", "korona");
         if (isset($_GET['id'])){
             $id = $_GET['id'];
-            $conn = mysqli_connect("localhost", "root", "", "korona");
             $wynik = mysqli_query($conn, "SELECT s.plik, s.nazwa, s.wysokosc, s.pasmo, o.opis FROM szczyty s JOIN opis o ON o.szczyty_id = s.id WHERE s.id = $id");
             $row = mysqli_fetch_array($wynik);
 
@@ -29,14 +29,12 @@
             echo '<h3>pasmo górskie: ' . $row['pasmo'] . '</h3>';
             echo '<p>' . $row['opis'] . '</p>';
 
-    mysqli_close($conn);
     }
     ?>
 </main>
 
 <section>
     <?php
-        $conn = mysqli_connect("localhost", "root", "", "korona");
         $wynik = mysqli_query($conn, "SELECT plik, nazwa FROM szczyty LIMIT 10");
         while ($row = mysqli_fetch_array($wynik)){
             echo '<img src="' . $row['plik'] . '" alt="' . $row['nazwa'] . '" class="miniatury">';
