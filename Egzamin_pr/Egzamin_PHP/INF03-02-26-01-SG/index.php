@@ -37,7 +37,7 @@
                         // Zapytanie 2: SELECT id, nazwa FROM towar;
                         $query = mysqli_query($conn, "SELECT id, nazwa FROM towar");
 
-                        while($row = $query -> fetch_assoc()){
+                        while($row = mysqli_fetch_assoc($query)){
                             echo"<option value='". $row['id'] ."'>" . $row['nazwa'] . "</option>";
                         }
                     ?>
@@ -49,7 +49,7 @@
                         // Zapytanie 3: SELECT rodzaj, nazwa, cena FROM towar WHERE id = 1;
                         $wybor_owocow = $_POST['wybor_owocow'];
                         $query = mysqli_query($conn, "SELECT rodzaj, nazwa, cena, id FROM towar WHERE id = $wybor_owocow");
-                        while($row = $query -> fetch_assoc()){
+                        while($row = mysqli_fetch_assoc($query)){
                             $waga = $_POST['waga'];
                             $wartosc = $row['cena'] * $waga;
                             $rodzaj = $row['rodzaj'];
@@ -68,7 +68,7 @@
     </main>
 
     <footer>
-        <p>Stronę opracował: 00000000001</p>
+        <p>Stronę opracował: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></p>
     </footer>
 </body>
 </html>

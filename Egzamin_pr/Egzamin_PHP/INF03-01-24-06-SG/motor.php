@@ -15,7 +15,7 @@
         <div id="lewy">
             <h2>Gdzie pojechać</h2>
             <?php
-                $pol = @mysqli_connect('localhost', 'root', '', 'motory') or die ("Nie można się połączyć");
+                $pol = mysqli_connect('localhost', 'root', '', 'motory');
                 $query = "SELECT nazwa, opis, poczatek, zrodlo FROM wycieczki INNER JOIN zdjecia ON wycieczki.zdjecia_id = zdjecia.id";
                 $result = mysqli_query($pol, $query);
 
@@ -55,7 +55,7 @@
                             echo"<p>Wpisanych wycieczek: ".$row[0] ."";
                         }
 
-                        mysqli_close($conn);
+                        mysqli_close($pol);
                 ?>
             </p>
             <p>Użytkowników forum: 200</p>
