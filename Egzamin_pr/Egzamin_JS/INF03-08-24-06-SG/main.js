@@ -1,47 +1,41 @@
-function aktywujZakladke(zakladkaId){
-    document.getElementById('mainKlient').style.display = 'none';
-    document.getElementById('mainAdres').style.display = 'none';
-    document.getElementById('mainKontakt').style.display = 'none';
+let licznik = 0;
 
-    document.getElementById(zakladkaId).style.display = 'block';
+function pokazKlient(){
+    document.getElementById("sectionKlient").style.display = "block";
+    document.getElementById("sectionAdres").style.display = "none";
+    document.getElementById("sectionKontakt").style.display = "none";
 }
 
-function klient(){
-    aktywujZakladke('mainKlient');
-}
-function adres(){
-    aktywujZakladke('mainAdres');
-}
-function kontakt(){
-    aktywujZakladke('mainKontakt');
+function pokazAdres(){
+    document.getElementById("sectionKlient").style.display = "none";
+    document.getElementById("sectionAdres").style.display = "block";
+    document.getElementById("sectionKontakt").style.display = "none";
 }
 
-let postep = 0;
+function pokazKontakt(){
+    document.getElementById("sectionKlient").style.display = "none";
+    document.getElementById("sectionAdres").style.display = "none";
+    document.getElementById("sectionKontakt").style.display = "block";
+}
 
-function updatePostep(){
-    if(postep < 100){
-        postep += 12;
-    
-    if(postep > 100){
-        postep = 100;
+function aktualizujPostep(){
+    licznik += 12;
+    if(licznik > 100){
+        licznik = 100;
     }
-        document.querySelector('#postep > div').style.width = postep + '%';
-    }
-}
 
-document.querySelectorAll('input[type="text"], input[type="date"], input[type="number"], input[type="tel"]').forEach(function (input){
-    input.addEventListener('blur', updatePostep);
-});
+    document.getElementById("pasekPostepu").style.width = `${licznik}%`;
+}
 
 function zatwierdz(){
-    let imie = document.getElementById('imie').value;
-    let nazwisko = document.getElementById('nazwisko').value;
-    let data = document.getElementById('data_u').value;
-    let ulica = document.getElementById('ulica').value;
-    let numer = document.getElementById('numer').value;
-    let miasto = document.getElementById('miasto').value;
-    let tel = document.getElementById('telefon').value;
-    let rodo = document.getElementById('rodo').checked;
+    let imie = document.getElementById("inputImie").value;
+    let nazwisko = document.getElementById("inputNazwisko").value;
+    let dataUrodzenia = document.getElementById("inputData").value;
+    let ulica = document.getElementById("inputUlica").value;
+    let numer = document.getElementById("inputNumer").value;
+    let miasto = document.getElementById("inputMiasto").value;
+    let telefon = document.getElementById("inputTelefon").value;
+    let RODO = document.getElementById("inputRODO").value;
 
-    console.log(imie + ", " + nazwisko + ", " + data + ", " + ulica + ", " + numer + ", " + miasto + ", " + tel + ", " + rodo);
+    console.log(`${imie}, ${nazwisko}, ${dataUrodzenia}, ${ulica}, ${numer}, ${miasto}, ${telefon}, ${RODO}`);
 }
