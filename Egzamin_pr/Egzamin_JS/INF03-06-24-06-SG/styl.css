@@ -1,5 +1,9 @@
 *{
-    font-family: 'Cambria';
+    font-family: Cambria;
+}
+
+body{
+    margin: 0;
 }
 
 header{
@@ -10,29 +14,38 @@ header{
 }
 
 main{
-    background: url(tulipany.jpg);
+    background: url(tulipany.png);
     height: 500px;
 }
 
-#stopka1, #stopka2, #stopka3, #stopka4{
+#footer1, #footer2, #footer3, #footer4{
     background-color: #C2185B;
     color: white;
     width: 25%;
     height: 240px;
-    float: left;
 }
 
-#form1, #form2, #form3{
+form{
+    display: flex;
+    flex-direction: row;
+}
+
+footer{
+    clear: both;
+    display: flex;
+    flex-direction: row;
+}
+
+#daneOsobowe, #daneKontaktowe, #hasloLogowania{
     background-color: #FCE4EC;
     width: 25%;
     height: 300px;
     margin: 25px;
     padding: 16px;
-    float: left;
 }
 
-#stopka1{
-    clear: both;
+#daneKontaktowe, #hasloLogowania{
+    visibility: hidden;
 }
 
 p{
@@ -43,13 +56,15 @@ a{
     color: white;
 }
 
-input{
+#formularzImie, #formularzNazwisko,
+#formularzEmail, #formularzTelefon,
+#formularzHaslo, #formularzPowtorzHaslo{
     width: 80%;
     height: 30px;
     margin: 10px;
 }
 
-button{
+.buttonSubmit{
     background-color: #C2185B;
     color: white;
     margin-top: 50px;
@@ -61,12 +76,4 @@ button{
 video{
     width: 100%;
     height: 100%;
-}
-
-.form-block{
-    opacity: 0;
-}
-
-.active{
-    opacity: 1;
 }
