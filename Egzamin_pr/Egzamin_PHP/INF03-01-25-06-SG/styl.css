@@ -1,6 +1,9 @@
 *{
-    font-family: 'Garamond';
+    font-family: Garamond;
     color: white;
+}
+
+body{
     margin: 0;
 }
 
@@ -15,42 +18,51 @@ header{
     height: 600px;
 }
 
-main{
+#left{
+    float: left;
+}
+
+#center{
     background-color: black;
     height: 600px;
     overflow: scroll;
+    float: left;
 }
 
-@media (min-width: 801px){
-    #left, #right{
-        width: 20%;
-        float: left;
-    }
-    main{
-        width: 60%;
-        float: left;
-    }
-    footer{
-        clear: both;
-    }
+#right{
+    float: right;
 }
 
 footer{
+    clear: both;
     background-color: indigo;
     height: 150px;
 }
 
-#left > ul > li > span.pkt{
+@media (min-width: 800px) {
+    main{
+        flex-direction: column;
+    }
+    #left, #right{
+        width: 20%;
+    }
+
+    #center{
+        width: 60%;
+    }
+}
+
+.punkty{
     background-color: tomato;
     border-radius: 50%;
     padding: 5px;
 }
 
-ul > li{
+li{
     padding: 5px;
 }
 
-main > .gra{
+.gry{
     float: left;
     text-align: center;
     padding: 3px;
