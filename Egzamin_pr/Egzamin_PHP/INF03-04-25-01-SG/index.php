@@ -1,5 +1,5 @@
 <?php
-    $conn = new mysqli(hostname:"localhost", username:"root", password:"", database:"obuwie");
+    $conn = mysqli_connect("localhost", "root", "", "obuwie");
 ?>
 
 <!DOCTYPE html>
@@ -20,10 +20,8 @@
             <label for="model">Model: </label>
             <select name="model" id="model" class="kontrolki">
                 <?php
-                $sql = "SELECT model FROM produkt;";
-                $result = $conn -> query($sql);
-                while ($row = $result -> fetch_assoc()) 
-                {
+                $query = mysqli_query($conn, "SELECT model FROM produkt");
+                while ($row = mysqli_fetch_assoc($query)){
                     echo"<option value='" . $row['model'] . "'>" . $row['model'] . "</option>";
                 }
                 ?>
@@ -41,10 +39,8 @@
         </form>
 
             <?php
-            $sql = "SELECT model, nazwa, cena, nazwa_pliku FROM buty JOIN produkt USING(model);";
-            $result = $conn ->query($sql);
-            while ($row = $result -> fetch_assoc())
-            {
+            $query = mysqli_query($conn, "SELECT model, nazwa, cena, nazwa_pliku FROM buty JOIN produkt USING(model)");
+            while ($row = mysqli_fetch_assoc($query)){
                 echo"<div class='buty'>";
                 echo"<img src='" . $row['nazwa_pliku'] . "' alt='but męski'>";
                 echo"<h2>" . $row['nazwa'] . "</h2>";
@@ -56,11 +52,7 @@
     </main>
 
     <footer>
-        <p>Autor Strony: <a href="https://www.github.com/alanwnuczko"> Alan Wnuczko</a></p>
+        <p>Autor Strony: <a href="https://www.github.com/alanwnuczko">Alan Wnuczko</a></p>
     </footer>
 </body>
 </html>
-
-<?php
-    $conn -> close();
-?>

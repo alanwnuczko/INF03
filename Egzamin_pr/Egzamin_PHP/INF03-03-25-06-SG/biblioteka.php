@@ -20,18 +20,13 @@
             </tr>
             <?php
                 $pol = mysqli_connect("localhost", "root", "", "biblioteka");
-                $query = "SELECT autor, tytul, kod FROM ksiazki ORDER BY RAND() LIMIT 5";
 
-                if($result = $pol -> query($query)){
-                    while($row = $result -> fetch_assoc()){
-                        echo"<tr>";
-                        echo"<td>" . htmlspecialchars($row["autor"]) . "</td>";
-                        echo"<td>" . htmlspecialchars($row["tytul"]) . "</td>";
-                        echo"<td>" . htmlspecialchars($row["kod"]) . "</td>";
-                        echo"</tr>";
-                    }
-                    $result -> free();
+                $query = mysqli_query($pol, "SELECT autor, tytul, kod FROM ksiazki ORDER BY RAND() LIMIT 5");
+
+                while($row = mysqli_fetch_assoc($query)){
+                    echo "<tr><td>{$row['autor']}</td><td>{$row['tytul']}</td><td>{$row['kod']}</td></tr>";
                 }
+
                 mysqli_close($pol);
             ?>
         </table>

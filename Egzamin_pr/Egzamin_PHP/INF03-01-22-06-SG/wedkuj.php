@@ -16,10 +16,9 @@
             <?php
                 $pol = mysqli_connect("localhost", "root", "", "wedkowanie");
 
-                $query = "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM ryby INNER JOIN lowisko ON ryby.id = lowisko.ryby_id WHERE lowisko.rodzaj = 3";
-                $result = mysqli_query($pol, $query);
+                $query = mysqli_query($pol, "SELECT ryby.nazwa, lowisko.akwen, lowisko.wojewodztwo FROM ryby INNER JOIN lowisko ON ryby.id = lowisko.ryby_id WHERE lowisko.rodzaj = 3");
 
-                while($row = $result -> fetch_array()){
+                while($row = mysqli_fetch_array($query)){
                     echo"<li>" . $row[0] . " pływa w rzece " . $row[1] . ", " . $row[2] . "</li>";
                 }
             ?>
@@ -38,10 +37,9 @@
             <th>Występowanie</th>
             </tr>
             <?php
-                $query = "SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1";
-                $result = mysqli_query($pol, $query);
+                $query = mysqli_query($pol, "SELECT id, nazwa, wystepowanie FROM ryby WHERE styl_zycia = 1");
 
-                while($row = $result -> fetch_array()){
+                while($row = mysqli_fetch_array($query)){
                     echo"<tr>";
                     echo"<td>" . $row[0] . "</td>";
                     echo"<td>" . $row[1] . "</td>";

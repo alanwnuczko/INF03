@@ -26,7 +26,7 @@
                 <?php
                     $query = mysqli_query($pol, "SELECT marka, model, cena, nazwa, doplata FROM pojazdy JOIN kolory ON pojazdy.kolor = kolory.id WHERE model = 'alfa'");
                     
-                    while($row = $query -> fetch_assoc()){
+                    while($row = mysqli_fetch_assoc($query)){
                         echo"<tr>";
                         echo"<td>" . $row['marka'] . "</td>";
                         echo"<td>" . $row['model'] . "</td>";

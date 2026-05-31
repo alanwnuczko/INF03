@@ -33,19 +33,18 @@
             <button type="submit" name="check">SPRAWDŹ</button>
         </form>
         <?php
+        $pol = mysqli_connect("localhost", "root", "", "kwiaciarnia");
             if(isset($_POST["check"])){
                 $miasto = $_POST["miasto"];
 
-                $pol = new mysqli("localhost", "root", "", "kwiaciarnia");
-                $query = "SELECT nazwa, ulica FROM kwiaciarnie WHERE miasto = '$miasto'";
-                $result = $pol -> query($query);
+                $query = mysqli_query($pol,"SELECT nazwa, ulica FROM kwiaciarnie WHERE miasto = '$miasto'");
 
-                while($row = $result -> fetch_array()){
+                while($row = mysqli_fetch_assoc($query)){
                     echo"<h3>" . $row[0] . ", " . $row[1] . "</h3>";
-                }
-
-                $pol -> close();
+                }     
             }
+
+            mysqli_close($pol);
         ?>
 
     </div>

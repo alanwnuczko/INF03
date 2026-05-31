@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli(hostname: "localhost", username: "root", password: "", database: "obuwie");
+$conn = mysqli_connect("localhost", "root", "", "obuwie");
 ?>
 
 <!DOCTYPE html>
@@ -24,9 +24,8 @@ $conn = new mysqli(hostname: "localhost", username: "root", password: "", databa
                 $rozmiar = $_POST['rozmiar'];
                 $liczba = $_POST['liczba'];
 
-                $sql = "SELECT nazwa, cena, kolor, kod_produktu, material, nazwa_pliku FROM buty JOIN produkt USING(model) WHERE model = '$model';";
-                $result = $conn -> query($sql);
-                $row = $result -> fetch_assoc();
+                $query = mysqli_query($conn, "SELECT nazwa, cena, kolor, kod_produktu, material, nazwa_pliku FROM buty JOIN produkt USING(model) WHERE model = '$model'");
+                $row = mysqli_fetch_assoc($query);
                 echo"<div class='buty'>";
                 echo"<img src='" . $row['nazwa_pliku'] . "' alt='but męski'>";
                 echo"<h2>" . $row['nazwa'] . "</h2>";
@@ -36,6 +35,8 @@ $conn = new mysqli(hostname: "localhost", username: "root", password: "", databa
                 echo"<p>Szczegóły produktu: " . $row['kolor'] . ", " . $row['material'] . "</p>";
                 echo"<p>Rozmiar: " . $rozmiar . "</p>";
             }
+
+            mysqli_close($conn);
         ?>
         <a href="index.php">Strona Główna</a>
     </main>
@@ -44,7 +45,3 @@ $conn = new mysqli(hostname: "localhost", username: "root", password: "", databa
     </footer>
 </body>
 </html>
-
-<?php
-    $conn -> close();
-?>
