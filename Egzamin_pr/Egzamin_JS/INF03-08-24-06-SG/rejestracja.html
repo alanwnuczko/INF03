@@ -7,61 +7,58 @@
     <title>Sklep - rejestracja</title>
 </head>
 <body>
-    <div id="left">
+    <aside>
         <img src="obraz.png" alt="promocje">
         <h2>Sprawdź promocje</h2>
         <table>
-            <tr>
-                <th>co?</th>
-                <th>ile taniej?</th>
-            </tr>
-            <tr>
-                <td>ubrania</td>
-                <td>15%</td>
-            </tr>
-            <tr>
-                <td>buty</td>
-                <td>25%</td>
-            </tr>
+            <tr><th>co?</th><th>ile taniej?</th></tr>
+            <tr><td>ubrania</td><td>15%</td></tr>
+            <tr><td>buty</td><td>25%</td></tr>
         </table>
-    </div>
+    </aside>
+
     <header>
         <h1>Zarejestruj się w sklepie</h1>
     </header>
-    <main>
-        <button onclick="klient()">Klient</button>
-        <button onclick="adres()">Adres</button>
-        <button onclick="kontakt()">Kontakt</button>
 
-        <div id="mainKlient">
-            <p>Imie</p>
-            <input type="text" name="imie" id="imie" placeholder="Wpisz dane...">
+    <main>
+        <button onclick="pokazKlient()">Klient</button>
+        <button onclick="pokazAdres()">Adres</button>
+        <button onclick="pokazKontakt()">Kontakt</button>
+        <section id="sectionKlient">
+            <p>Imię</p>
+            <input type="text" placeholder="Wpisz dane..." id="inputImie" onblur="aktualizujPostep()">
             <p>Nazwisko</p>
-            <input type="text" name="nazwisko" id="nazwisko">
+            <input type="text" id="inputNazwisko" onblur="aktualizujPostep()">
             <p>Data urodzenia</p>
-            <input type="date" name="data_u" id="data_u">
-        </div>
-        <div id="mainAdres">
+            <input type="date" id="inputData" onblur="aktualizujPostep()">
+        </section>
+
+        <section id="sectionAdres">
             <p>Ulica</p>
-            <input type="text" name="ulica" id="ulica">
+            <input type="text" id="inputUlica" onblur="aktualizujPostep()">
             <p>Numer</p>
-            <input type="number" name="numer" id="numer">
+            <input type="number" id="inputNumer" onblur="aktualizujPostep()">
             <p>Miasto</p>
-            <input type="text" name="miasto" id="miasto">
-        </div>
-        <div id="mainKontakt">
+            <input type="text" id="inputMiasto" onblur="aktualizujPostep()">
+        </section>
+
+        <section id="sectionKontakt">
             <p>Numer komórkowy</p>
-            <input type="tel" name="telefon" id="telefon"><br>
-            <input type="checkbox" name="rodo" id="rodo"> <label for="rodo">Akceptuję RODO</label><br>
-            <button onclick="zatwierdz()">Zatwierdź dane</button>
-        </div>
+            <input type="tel" id="inputTelefon" onblur="aktualizujPostep()"><br>
+            <input type="checkbox" name="inputRODO "id="inputRODO" onblur="aktualizujPostep()"><label for="inputRODO">Akceptuję RODO</label><br>
+            <button id="buttonZatwierdz" onclick="zatwierdz()">Zatwierdź dane</button>
+
+        </section>
     </main>
-    <div id="postep">
-        <div></div>
-    </div>
+
+    <section id="postep">
+        <section id="pasekPostepu"></section>
+    </section>
+    
     <footer>
-        <h4>Rejestrację do sklepu wykonał: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></h4>
+        <h4>rejestrację do sklepu wykonał: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></h4>
     </footer>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
