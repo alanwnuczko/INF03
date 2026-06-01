@@ -37,6 +37,8 @@
                     }
                     echo"</table>";
                 }
+
+                mysqli_close($conn);
             ?>
         </section>
         <section id="left2">
