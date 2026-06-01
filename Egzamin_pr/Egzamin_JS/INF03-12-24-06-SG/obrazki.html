@@ -3,38 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Efekty obrazu</title>
     <link rel="stylesheet" href="styl.css">
+    <title>Efekty obrazu</title>
 </head>
 <body>
     <header>
         <h2>Efekty na obrazach</h2>
     </header>
-    <section class="block">
-        <img src="pszczola.jpg" alt="pszczoła na fioletowym kwiatku" id="obraz1"> <br>
-        <input type="radio" name="opcja" id="blu">Blur <br>
-        <input type="radio" name="opcja" id="sepia">Sepia <br>
-        <input type="radio" name="opcja" id="negatyw">Negatyw <br>
-        <button onclick="zastosuj()">Zastosuj</button>
-    </section>
-    <section class="block">
-        <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="obraz2"> <br>
-        <button onclick="kolor()">Kolorowy</button>
-        <button onclick="czarnoBialy()">Czarno-biały</button>
-    </section>
-    <section class="block">
-        <img src="owoce.jpg" alt="Kosz pełen owoców" id="obraz3"> <br>
-        <input type="range" id="suwak1" min="0" max="100" value="100"> <br>
-        <button onclick="przezroczystosc()">Zastosuj</button>
-    </section>
-    <section class="block">
-        <img src="zolw.jpg" alt="Żółw w wodzie" id="obraz4"> <br>
-        <input type="range" id="suwak2" min="0" max="250"> <br>
-        <button onclick="jasnosc()">Zastosuj</button>
-    </section>
+    <main>
+        <section id="blokPszczola">
+            <img src="pszczola.jpg" alt="pszczola na fioletowym kwiatku" id="imgPszczola"><br>
+            <input type="radio" name="efektPszczola" id="pszczolaBlur"><label for="efektPszczola">Blur</label><br>
+            <input type="radio" name="efektPszczola" id="pszczolaSepia"><label for="efektPszczola">Sepia</label><br>
+            <input type="radio" name="efektPszczola" id="pszczolaNegatyw"><label for="efektPszczola">Negatyw</label><br>
+            <button onclick="efektPszczola()">Zastosuj</button>
+        </section>
+        <section id="blokPomarancza">
+            <img src="pomarancza.jpg" alt="drzewo pomarańczy" id="imgPomarancza"><br>
+            <button onclick="efektPomaranczaKolor()">Kolorowy</button>
+            <button onclick="efektPomaranczaGrayscale()">Czarnobiały</button>
+        </section>
+        <section id="blokOwoce">
+            <img src="owoce.jpg" alt="Kosz pełen owoców" id="imgOwoce"><br>
+            <input type="range" class="suwak" id="owoceSuwak" min="0" max="100" value="100"><br>
+            <button onclick="efektOwoce()">Zastosuj</button>
+        </section>
+        <section id="blokZolw">
+            <img src="zolw.jpg" alt="Żółw w wodzie" id="imgZolw"><br>
+            <input type="range" class="suwak" id="zolwSuwak" min="0" max="250"><br>
+            <button onclick="efektZolw()">Zastosuj</button>
+        </section>
+    </main>
     <footer>
-        <a href="http://www.css.com" target="_blank" rel="noopener noreferrer">Zobacz inne efekty obrazu</a>
-        <p>Autor Strony: <a href="https://www.github.com/alanwnuczko"> Alan Wnuczko</a></p>
+        <p><a href="http://css.com" target="_blank">Zobacz inne efekty obrazu</a></p>
+        <p>Stronę wykonał: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></p>
     </footer>
     <script src="main.js"></script>
 </body>

@@ -1,30 +1,30 @@
-const zastosuj=()=>{
-        if(blu.checked)
-        {
-            obraz1.style.filter="blur(8px)";
-        }
-        if(sepia.checked)
-        {
-            obraz1.style.filter="sepia(100%)";
-        }
-        if(negatyw.checked)
-        {
-            obraz1.style.filter="invert(100%)";
-        }
+function efektPszczola(){
+    if(document.getElementById("pszczolaBlur").checked){
+        // filter: blur(10px);
+        document.getElementById("imgPszczola").style.filter = "blur(5px)";
     }
+    if(document.getElementById("pszczolaSepia").checked){
+        document.getElementById("imgPszczola").style.filter = "sepia(100%)";
+    }
+    if(document.getElementById("pszczolaNegatyw").checked){
+        document.getElementById("imgPszczola").style.filter = "invert(100%)";
+    }
+}
 
-    const czarnoBialy=()=>{
-        obraz2.style.filter="grayscale(100%)";
-    }
+function efektPomaranczaKolor(){
+    document.getElementById("imgPomarancza").style.filter = "grayscale(0%)";
+}
 
-    const kolor=()=>{
-        obraz2.style.filter="none";
-    }
+function efektPomaranczaGrayscale(){
+    document.getElementById("imgPomarancza").style.filter = "grayscale(100%)";
+}
 
-    const przezroczystosc=()=>{
-        obraz3.style.filter="opacity("+suwak1.value+"%)";
-    }
+function efektOwoce(){
+    let wartoscSuwakaOwoce = document.getElementById("owoceSuwak").value;
+    document.getElementById("imgOwoce").style.filter = `opacity(${wartoscSuwakaOwoce}%)`;
+}
 
-    const jasnosc=()=>{
-        obraz4.style.filter="brightness("+suwak2.value+"%)";
-    }
+function efektZolw(){
+    let wartoscSuwakaZolw = document.getElementById("zolwSuwak").value;
+    document.getElementById("imgZolw").style.filter = `brightness(${wartoscSuwakaZolw}%)`;
+}
