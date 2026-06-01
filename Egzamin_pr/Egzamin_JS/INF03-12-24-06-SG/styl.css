@@ -1,6 +1,10 @@
 *{
-    font-family:Century, serif;
+    font-family: Century Serif;
     text-align: center;
+}
+
+body{
+    margin: 0;
 }
 
 header, footer{
@@ -10,16 +14,20 @@ header, footer{
     padding: 2px;
 }
 
-.block{
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section{
     width: 50%;
     height: 470px;
-    float: left;
 }
 
 img{
     padding: 3px;
     margin: 10px;
-    border: 2px dashed slateblue;
+    border: dashed 2px slateblue;
 }
 
 a{
@@ -30,7 +38,10 @@ button{
     background-color: slateblue;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     margin-top: 10px;
 }
 
@@ -38,7 +49,7 @@ button:hover{
     background-color: indigo;
 }
 
-input[type="range"]{
+.suwak{
     width: 80%;
 }
 
