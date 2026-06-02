@@ -45,7 +45,7 @@ INF03/
 | Zdrowie | 6 | PHP | [INF.03-06-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-06-26-01-SG/arkusz_i_baza/INF03-06-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-06-26-01-SG/) |
 | Pogoda | 7 | PHP | [INF.03-07-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-07-26-01-SG/arkusz_i_baza/INF03-07-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-07-26-01-SG/) |
 | Góry | 8 | PHP | [INF.03-08-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-08-26-01-SG/arkusz_i_baza/INF03-08-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-08-26-01-SG/) |
-| Paznokcie | 9 | JS | [INF.03-09-26.01-SG](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/arkusz_i_baza/INF03-09-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/) |
+| Paznokcie | 9 | JS lub (PHP +JS) | [INF.03-09-26.01-SG](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/arkusz_i_baza/INF03-09-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/) |
 | Przepisy | 10 | PHP | [INF.03-10-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-10-26-01-SG/arkusz_i_baza/INF03-10-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-10-26-01-SG/) |
 
 ---
