@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Stylizacja paznokci</title>
+</head>
+<body>
+    <aside>
+        <img src="manicure.jpg" alt="Stylizacja paznokci">
+    </aside>
+    <main>
+        <header>
+            <h1>Twoje wymarzone paznokcie</h1>
+        </header>
+        <nav>
+            <button onmouseover="pokazKolor()" id="buttonPokazKolor">Kolor</button>
+            <button onmouseover="pokazKsztalt()" id="buttonPokazKsztalt">Kształt</button>
+            <button onmouseover="pokazWzor()" id="buttonPokazWzor">Wzór</button>
+        </nav>
+        <section id="sekcja1">
+            <h2>Kolor</h2>
+            <img src="kolory.png" alt="Kolory paznokci"><br>
+            <input type="color" name="wybierzKolor" id="wybierzKolor" value="#FF0000">
+        </section>
+        <section id="sekcja2">
+            <h2>Kształt</h2>
+            <img src="ksztalt.png" alt="Kształty paznokci"><br>
+            <select name="wyborKsztaltu" id="wyborKsztaltu">
+                <option value="migdał">migdał</option>
+                <option value="zaokrąglony">zaokrąglony</option>
+                <option value="kwadratowy">kwadratowy</option>
+                <option value="balerina">balerina</option>
+                <option value="zaokrąglony kwadrat">zaokrąglony kwadrat</option>
+            </select>
+        </section>
+        <section id="sekcja3">
+            <h2>Wzór</h2>
+            <?php
+                for($i = 1; $i <= 10; $i++){
+                    echo"<img src='{$i}.jpg' class='wzory' title='{$i}'>";
+                }
+            ?>
+            <br>
+            <input type="number" name="wybierzWzor" id="wybierzWzor" min="1" max="10">
+        </section>
+    </main>
+    <footer>
+        <p>Autor strony: <em><a href="https://github.com/alanwnuczko">Alan Wnuczko</a></em></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
