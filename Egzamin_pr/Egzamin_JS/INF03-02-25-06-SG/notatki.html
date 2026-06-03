@@ -2,34 +2,30 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="styl.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
     <title>Planer zadań</title>
 </head>
 <body>
-    <aside>
-        <img src="obraz.jpg" alt="notatki">
-    </aside>
-    <header>
-        <h2>Moje zadania</h2>
-    </header>
+    <aside><img src="obraz.jpg" alt="notatki"></aside>
+    <header><h2>Moje zadania</h2></header>
     <nav>
-        <input type="text" name="zadanie" id="zadanie" placeholder="Dodaj zadanie...">
-        <button onclick="dodaj()">Dodaj</button>
+        <input type="text" id="dodajZadanie" placeholder="Dodaj zadanie...">
+        <button type="submit" onclick="noweZadanie()">Dodaj</button>
     </nav>
     <main>
-        <ul>
-            <li>Wyprowadzić psa <button type="button" onclick="wykonane(this)">Wykonane</button></li>
-            <li>Gimnastyka <button type="button" onclick="wykonane(this)">Wykonane</button></li>
-            <li>Zakupy <button type="button" onclick="wykonane(this)">Wykonane</button></li>
-            <li>Spacer z kumplem <button type="button" onclick="wykonane(this)">Wykonane</button></li>
-            <li>Odrabianie lekcji z młodszą siostra <button type="button" onclick="wykonane(this)">Wykonane</button></li>
-            <li>Projekt na geografię <button type="button" onclick="wykonane(this)">Wykonane</button></li>
+        <ul id="listaZadan">
+            <li>Wyprowadzić psa <button class="przyciskLista" onclick="usunZadanie(this)">Wykonane</button></li>
+            <li>Gimnastyka <button class="przyciskLista" onclick="usunZadanie(this)">Wykonane</button></li>
+            <li>Zakupy <button class="przyciskLista" onclick="usunZadanie(this)">Wykonane</button></li>
+            <li>Spacer z kumplem <button class="przyciskLista" onclick="usunZadanie(this)">Wykonane</button></li>
+            <li>Odrabianie lekcji z młodszą siostrą <button class="przyciskLista" onclick="usunZadanie(this)">Wykonane</button></li>
+            <li>Projekt na geografię <button class="przyciskLista" onclick="usunZadanie(this)">Wykonane</button></li>
         </ul>
     </main>
     <footer>
-        <h3>Notatki: <a href="https://www.github.com/alanwnuczko" style="color: unset;">Alan Wnuczko</a></h3>
+        <h3>Notatki: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></h3>
     </footer>
+    <script src="main.js"></script>
 </body>
-<script src="main.js"></script>
 </html>
