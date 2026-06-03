@@ -1,11 +1,11 @@
 *{
-    font-family: 'Verdana';
+    font-family: Verdana;
 }
 
 aside{
+    float: left;
     width: 20%;
     height: 610px;
-    float: left;
 }
 
 img{
@@ -13,14 +13,21 @@ img{
     height: 610px;
 }
 
-nav, header, footer{
+header, nav, main, footer{
+    float: right;
+}
+
+footer{
+    clear: right;
+}
+
+header, footer, nav{
     background-color: mediumpurple;
     color: white;
     width: 80%;
     height: 50px;
     text-align: center;
-    box-shadow: 4px 4px dimgray;
-    float: right;
+    text-shadow: 4px 4px dimgray;
 }
 
 nav{
@@ -32,10 +39,9 @@ main{
     width: 80%;
     height: 450px;
     overflow: auto;
-    float: right;
 }
 
-main > ul > li > button{
+.przyciskLista{
     float: right;
     background-color: mediumpurple;
     color: white;
@@ -44,21 +50,21 @@ main > ul > li > button{
 }
 
 ul{
-    margin: 40px auto;
+    margin: 40px auto 40px auto;
     width: 70%;
     font-size: 25px;
-    border: 2px solid mediumpurple;
-    list-style: none;
+    border: solid 2px mediumpurple;
+    list-style-type: none;
 }
 
-ul > li{
+li{
     padding: 10px;
 }
 
-ul > li:nth-of-type(even){
-    background-color: #ddcadd;
+li:nth-of-type(even){
+    background-color: #DDCADD;
 }
 
-ul > li:hover{
+li:hover{
     background-color: lavender;
 }
