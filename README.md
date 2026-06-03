@@ -47,6 +47,7 @@ INF03/
 | Góry | 8 | PHP | [INF.03-08-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-08-26-01-SG/arkusz_i_baza/INF03-08-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-08-26-01-SG/) |
 | Paznokcie | 9 | JS lub (PHP +JS) | [INF.03-09-26.01-SG](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/arkusz_i_baza/INF03-09-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/) |
 | Przepisy | 10 | PHP | [INF.03-10-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-10-26-01-SG/arkusz_i_baza/INF03-10-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-10-26-01-SG/) |
+| Aktorzy | 11 | PHP | [INF.03-11-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-11-26-01-SG/arkusz_i_baza/INF03-11-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-11-26-01-SG/) |
 
 ---
 
