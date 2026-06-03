@@ -8,7 +8,7 @@ SELECT plik, nazwa FROM szczyty LIMIT 10;
 ```
 kw3:
 ```sql
-SELECT s.plik, s.nazwa, s.wysokosc, s.pasmo, o.opis FROM szczyty s JOIN opis o ON s.id = o.szczyty_id WHERE s.id = 1;
+SELECT plik, nazwa, wysokosc, pasmo, opis FROM szczyty JOIN opis ON szczyty.id = opis.szczyty_id WHERE szczyty.id = 1;
 ```
 kw4:
 ```sql
