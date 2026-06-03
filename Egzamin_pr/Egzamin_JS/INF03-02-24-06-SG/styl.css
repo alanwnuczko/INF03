@@ -1,23 +1,32 @@
 *{
-    font-family: 'Garamond';
+    font-family: Garamond;
 }
 
-header{ /* # = id w html */
+body{
+    margin: 0;
+}
+
+header{
     background-color: tomato;
-    color: white;
-    float: left;
     text-align: center;
     width: 80%;
     height: 80px;
 }
 
+header{
+    float: left;
+}
+
 main{
     float: left;
+}
+
+main{
     width: 80%;
     height: 600px;
 }
 
-#sidebar{
+aside{
     float: right;
     background-color: coral;
     width: 20%;
@@ -33,18 +42,18 @@ footer{
 
 img{
     border-radius: 50%;
-    padding-left:10px;
-    padding-right:10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-#chat{
-    border: 1px solid tomato;
+#blokChatu{
+    border: solid 1px tomato;
     margin: 15px;
     height: 470px;
     overflow: scroll;
 }
 
-#chat > div {
+#blokJolanta, #blokKrzysztof{
     border-radius: 5px;
     width: 90%;
     height: 70px;
@@ -52,30 +61,27 @@ img{
     padding: 3px;
 }
 
-#chat > div.jolka{
+#blokJolanta{
     background-color: #EEE;
 }
-
-#chat > div.jolka img{
+#blokJolanta>p, #blokJolanta>img{
     float: left;
 }
 
-#chat > div.krzysiek{
+#blokKrzysztof{
     background-color: #CCC;
-    text-align: right;
 }
-
-#chat > div.krzysiek img{
+#blokKrzysztof>p, #blokKrzysztof>img{
     float: right;
 }
 
 button{
     background-color: tomato;
-    border: 1px darkred;
+    border: solid 1px darkred;
     padding: 5px;
-    font-weight:bold;
+    font-weight: bold;
 }
 
-input{
+input[type="text"]{
     width: 500px;
 }
