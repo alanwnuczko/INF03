@@ -1,6 +1,10 @@
 *{
-    font-family: 'Georgia';
+    font-family: Georgia;
     color: white;
+}
+
+body{
+    margin: 0;
 }
 
 header, footer{
@@ -9,58 +13,81 @@ header, footer{
     padding: 2px;
 }
 
-#left, #middle, #right{
-    float: left;
+section#left, section#center, section#right{
     background-color: lightsalmon;
     height: 527px;
 }
-#left, #right{
+
+section#left{
+    float: left;
     width: 15%;
 }
 
-#middle{
+section#center{
+    float: left;
     width: 70%;
+    text-align: center;
 }
 
-#miniatury{
+section#right{
+    float: left;
+    width: 15%;
+}
+
+section#miniatury{
+    clear: both;
     background-color: maroon;
     height: 70px;
-    clear: both;
 }
 
-#miniatury img{
-    height: 70px;
-    animation: miniaturyAnimacja 4s;
-    padding-left: 50px;
-}
-
-button{
+input[type="button"]{
     background-color: lightsalmon;
     color: maroon;
-    border: 0;
+    border: none;
     font-size: 400%;
     display: block;
     margin: auto;
     padding-top: 210px;
 }
 
-#middle img{
+@keyframes animacjaMiniatury {
+    from{
+        padding-left: 50px;
+    }
+
+    to{
+        padding-left: 0px;
+    }
+}
+
+section#miniatury img{
+    height: 70px;
+    animation-name: animacjaMiniatury;
+    animation-duration: 4s;
+}
+
+@keyframes animacjaObrazu{
+    from{
+        scale: 100%;
+    }
+
+    to{
+        scale: 120%;
+    }
+}
+
+section#center img{
     display: block;
     margin: auto;
     padding-top: 45px;
 }
 
-#middle img:hover{
-    transform: scale(1.2);
+section#center img:hover{
+    animation-name: animacjaObrazu;
+    animation-duration: 5s;
+    scale: 120%;
 }
 
-@keyframes miniaturyAnimacja{
-    from
-    {
-        padding-left: 50px;
-    }
-    to
-    {
-        padding-left: 0px;
-    }
+footer{
+    clear: both;
 }
