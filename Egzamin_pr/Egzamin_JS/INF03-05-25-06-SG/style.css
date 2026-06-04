@@ -1,20 +1,26 @@
 *{
-    font-family: 'Century Gothic', Arial;
+    font-family: 'Century Gothic', arial;
 }
 
 body{
     background-color: blanchedalmond;
+    margin: 0;
 }
 
 header, footer{
-    background-color: Sienna;
+    background-color: sienna;
     color: white;
     padding: 5px;
     text-align: center;
     font-size: 130%;
 }
 
-.lewa{
+footer{
+    clear: both;
+}
+
+section#left{
+    clear: both;
     background-color: navajowhite;
     margin: 10px;
     padding: 20px;
@@ -24,20 +30,45 @@ header, footer{
     float: left;
 }
 
+nav, section#right{
+    float: right;
+}
+
+.elementListyWynik img{
+    float: left;
+}
+
+#wynik li {
+    list-style: none;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+#wynik img {
+    width: 70px;
+    height: 45px;
+    object-fit: cover;
+    float: none;
+    margin-right: 0;
+}
+
+#wynik p {
+    margin: 0;
+}
+
 nav{
     width: 50%;
     height: 50px;
-    float: right;
 }
 
-.prawa{
+section#right{
     width: 50%;
     height: 420px;
     overflow: auto;
-    float: right;
 }
 
-input, button{
+input{
     margin-top: 20px;
 }
 
@@ -56,9 +87,5 @@ a{
 }
 
 a:hover{
-    color: #4C1900
-}
-
-footer{
-    clear: both;
+    color: #4c1900;
 }
