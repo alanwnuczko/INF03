@@ -30,6 +30,8 @@
             while($row = mysqli_fetch_assoc($query)){
                 echo"<img src='{$row['plik']}' alt='{$row['nazwa']}' class='miniatury'>";
             }
+
+            mysqli_close($conn);
         ?>
     </section>
     <footer id="footer1">
