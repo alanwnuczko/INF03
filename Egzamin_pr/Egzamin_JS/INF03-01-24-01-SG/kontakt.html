@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>Firma IT</title>
+</head>
+<body>
+    <section id="kontenerStrony">
+        <section id="blokLogo">
+            <img src="logo.png" alt="firma it">
+        </section>
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="uslugi.html">Usługi</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <header>
+            <img src="animacja.gif" alt="Usługi informatyczne">
+        </header>
+        <main>
+            <h2>Kontakt</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td>Imie:</td>
+                        <td><input type="text" id="inputImie"></td>
+                    </tr>
+                    <tr>
+                        <td>Nazwisko:</td>
+                        <td><input type="text" id="inputNazwisko"></td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td><input type="email" name="inputEmail" id="inputEmail"></td>
+                    </tr>
+                    <tr>
+                        <td>Zgłoszenie:</td>
+                        <td><textarea name="inputZgloszenie" id="inputZgloszenie" cols="40" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="checkbox" name="inputRegulamin" id="inputRegulamin">
+                            <label for="inputRegulamin">Zapoznałem się z regulaminem</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="reset">Resetuj</button>
+                            <button type="button" onclick="przeslij()">Prześlij</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <hr>
+            <p id="wynik"></p>
+        </main>
+        <footer>
+            <p>Autor strony: <strong><a href="https://github.com/alanwnuczko">Alan Wnuczko</a></strong></p>
+        </footer>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>

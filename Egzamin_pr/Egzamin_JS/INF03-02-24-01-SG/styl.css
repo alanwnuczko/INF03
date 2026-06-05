@@ -1,0 +1,64 @@
+body{
+    background-color: #E0F7FA;
+    font-family: Arial;
+    text-align: center;
+}
+
+section#kontenerStrony{
+    width: 95%;
+    margin: auto;
+}
+
+header{
+    background-color: #00838F;
+    height: 200px;
+}
+
+nav{
+    background-color: #006064;
+    padding: 15px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+#main1, #main2, #main3{
+    height: 350px;
+    width: 33%;
+}
+
+#main1{
+    float: left;
+}
+
+#main2{
+    float: left;
+}
+
+#main3{
+    float: left;
+}
+
+footer{
+    clear: both;
+    background-color: #006064;
+    color: white;
+    text-align: right;
+    padding: 10px;
+}
+
+ul{
+    text-align: left;
+}
+
+button{
+    background-color: #00838F;
+    color: white;
+}
+
+button:hover{
+    color: #80DEEA;
+}

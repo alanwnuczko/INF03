@@ -48,6 +48,7 @@ INF03/
 | Paznokcie | 9 | JS lub (PHP +JS) | [INF.03-09-26.01-SG](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/arkusz_i_baza/INF03-09-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-09-26-01-SG/) |
 | Przepisy | 10 | PHP | [INF.03-10-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-10-26-01-SG/arkusz_i_baza/INF03-10-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-10-26-01-SG/) |
 | Aktorzy | 11 | PHP | [INF.03-11-26.01-SG](Egzamin_pr/Egzamin_PHP/INF03-11-26-01-SG/arkusz_i_baza/INF03-11-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-11-26-01-SG/) |
+| Tatuaże | 12 | JS | [INF.03-12-26.01-SG](Egzamin_pr/Egzamin_JS/INF03-12-26-01-SG/arkusz_i_baza/INF03-12-26-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-12-26-01-SG/) |
 
 ---
 
@@ -103,6 +104,8 @@ INF03/
 
 | Opis | Nr | Język | Arkusz | Rozwiązanie |
 |---|---|---|---|---|
+| Usługi informatyczne | 1 | JS | [INF.03-01-24.01-SG](Egzamin_pr/Egzamin_JS/INF03-01-24-01-SG/arkusz/INF03-01-24-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-01-24-01-SG/) |
+| Pogotowie komputerowe | 2 | JS | [INF.03-02-24.01-SG](Egzamin_pr/Egzamin_JS/INF03-02-24-01-SG/arkusz/INF03-02-24-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-02-24-01-SG/) |
 | Usługi kosmetyczne | 5 | JS | [INF.03-05-24.01-SG](Egzamin_pr/Egzamin_JS/INF03-05-24-01-SG/arkusz_i_baza/INF03-05-24-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-05-24-01-SG/) |
 | Salon fryzjerski | 8 | JS | [INF.03-08-24.01-SG](Egzamin_pr/Egzamin_JS/INF03-08-24-01-SG/arkusz_i_baza/INF03-08-24-01-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-08-24-01-SG/) |
 
