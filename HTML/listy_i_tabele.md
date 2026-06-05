@@ -10,10 +10,18 @@
 </ul>
 ```
 Wynik:
-> Mleko  
-> Jajka  
-> Chleb  
-> Masło  
+> - Mleko  
+> - Jajka  
+> - Chleb  
+> - Masło
+
+Styl punktora można zmieniać w CSS:
+```css
+ul{
+  list-style-type: none; /* Brak punktora */
+  list-style-type: square; /* Kwadratowy punktor */
+}
+```
 
 
 ### Lista uporządkowana `<ol>`
