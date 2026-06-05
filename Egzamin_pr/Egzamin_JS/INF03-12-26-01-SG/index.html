@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Tatuaże</title>
+</head>
+<body>
+    <header id="baner1">
+        <img src="logo.png" alt="salon">
+    </header>
+    <header id="baner2">
+        <h1>Studio tatuażu</h1>
+    </header>
+    <section id="sectionGaleria">
+        <h2>Galeria</h2>
+        <img src="smok.png" alt="smok.png" class="miniatury">
+        <img src="koliber.png" alt="koliber.png" class="miniatury">
+    </section>
+    <aside>
+        <h3>Dodaj wzór</h3>
+        <label for="inputPlik">Wzór:</label><br>
+        <input type="file" name="inputPlik" id="inputPlik" accept="image/png"><br>
+        <label for="inputKolor">Kolor:</label><br>
+        <select name="inputKolor" id="inputKolor">
+            <option value="czarny">Czarny</option>
+            <option value="czerwony">Czerwony</option>
+            <option value="zielony">Zielony</option>
+            <option value="niebieski">Niebieski</option>
+        </select><br>
+        <label for="inputCena">Cena:</label><br>
+        <input type="number" name="inputCena" id="inputCena"><br>
+        <button type="submit" onclick="dodajWzor()">Dodaj wzór</button>
+    </aside>
+    <footer><p>Autor strony: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></p></footer>
+    <script src="main.js"></script>
+</body>
+</html>

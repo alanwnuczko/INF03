@@ -1,0 +1,62 @@
+body{
+    background-color: #EEEEEE;
+    font-family: Helvetica;
+    margin: 0;
+}
+
+section#kontenerStrony{
+    width: 90%;
+    margin: auto;
+}
+
+#blokLogo, nav{
+    background-color: lightblue;
+    height: 100px;
+    width: 50%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#blokLogo{
+    float: left;
+}
+
+nav{
+    float: right;
+}
+
+header{
+    clear: both;
+    background-color: #DDDDDD;
+    height: 200px;
+}
+
+main{
+    color: navy;
+    margin: 50px;
+    height: 400px;
+}
+
+footer{
+    text-align: right;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+button{
+    background-color: lightblue;
+    color: navy;
+}
+
+nav a{
+    color: navy;
+    font-size: 150%;
+    font-style: none;
+    font-weight: bold;
+    margin: 10px;
+    padding: 5px;
+}
+
+nav a:hover{
+    border: solid 1px navy;
+}
