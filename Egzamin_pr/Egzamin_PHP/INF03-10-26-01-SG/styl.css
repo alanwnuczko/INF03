@@ -1,6 +1,10 @@
 *{
-    font-family: Garamond, serif;
+    font-family: Garamond;
     text-align: center;
+}
+
+body{
+    margin: 0;
 }
 
 aside{
@@ -9,6 +13,9 @@ aside{
     width: 10%;
     height: 600px;
     float: left;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 main{
@@ -16,19 +23,21 @@ main{
     height: 600px;
     overflow: auto;
     float: left;
+    margin: 0;
 }
 
 section{
+    background-size: cover;
+    float: left;
     color: white;
     width: 45%;
     height: 600px;
-    background-size: cover;
-    float: left;
+    margin: 0;
 }
 
 h1{
     background-color: rgba(211, 211, 211, 0.3);
-    padding: 20px 0;
+    padding: 20px 0 20px 0;
     margin: 0;
     font-size: 2em;
 }
@@ -43,11 +52,11 @@ li{
 }
 
 a{
-    color: Gainsboro;
+    color: gainsboro;
     font-size: 120%;
     font-style: italic;
 }
 
-a:hover{
+s:hover{
     color: white;
 }
