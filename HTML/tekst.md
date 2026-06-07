@@ -1,4 +1,4 @@
-## TEKST
+# FORMATOWANIE TEKSTU
 
 ### Nagłówki `<h1>` – `<h6>`
 ```html
@@ -9,13 +9,22 @@
 <h5>Nagłówek piątego stopnia</h5>
 <h6>Nagłówek szóstego stopnia</h6>
 ```
+
 Wynik:
-> # Nagłówek pierwszego stopnia
-> ## Nagłówek drugiego stopnia
-> ### Nagłówek trzeciego stopnia
-> #### Nagłówek czwartego stopnia
-> ##### Nagłówek piątego stopnia
-> ###### Nagłówek szóstego stopnia
+
+```text
+NAGŁÓWEK PIERWSZEGO STOPNIA
+
+Nagłówek drugiego stopnia
+
+Nagłówek trzeciego stopnia
+
+Nagłówek czwartego stopnia
+
+Nagłówek piątego stopnia
+
+Nagłówek szóstego stopnia
+```
 
 ---
 
@@ -24,10 +33,14 @@ Wynik:
 <p>Pierwszy akapit tekstu.</p>
 <p>Drugi akapit tekstu.</p>
 ```
+
 Wynik:
-> Pierwszy akapit tekstu.
->
->Drugi akapit tekstu.
+
+```text
+Pierwszy akapit tekstu.
+
+Drugi akapit tekstu.
+```
 
 ---
 
@@ -35,8 +48,14 @@ Wynik:
 ```html
 <p>Cena wynosi <strong>99 zł</strong>.</p>
 ```
+
 Wynik:
-> Cena wynosi **99 zł**.
+
+```text
+Cena wynosi 99 zł.
+```
+
+(tekst „99 zł” będzie pogrubiony)
 
 ---
 
@@ -44,8 +63,14 @@ Wynik:
 ```html
 <p>Tytuł książki to <em>Wiedźmin</em>.</p>
 ```
+
 Wynik:
-> Tytuł książki to *Wiedźmin*.
+
+```text
+Tytuł książki to Wiedźmin.
+```
+
+(tekst „Wiedźmin” będzie zapisany kursywą)
 
 ---
 
@@ -53,10 +78,14 @@ Wynik:
 ```html
 <p>Pierwsza linia<br>Druga linia<br>Trzecia linia</p>
 ```
+
 Wynik:
-> Pierwsza linia  
-> Druga linia  
-> Trzecia linia  
+
+```text
+Pierwsza linia
+Druga linia
+Trzecia linia
+```
 
 ---
 
@@ -66,7 +95,15 @@ Wynik:
 <a href="kontakt.html">Kontakt</a>
 <a href="mailto:jan@example.com">Napisz e-mail</a>
 ```
+
 Wynik:
-> [Przejdź do Google](https://www.google.com)
-> [Kontakt](kontakt.html)
-> [Napisz e-mail](mailto:jan@example.com)
+
+```text
+Przejdź do Google
+Kontakt
+Napisz e-mail
+```
+
+- „Przejdź do Google” prowadzi do `https://www.google.com`
+- „Kontakt” prowadzi do `kontakt.html`
+- „Napisz e-mail” otwiera program pocztowy dla `jan@example.com`
