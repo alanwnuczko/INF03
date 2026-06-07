@@ -1,5 +1,4 @@
-## LISTY
-
+# LISTY
 ### Lista nieuporządkowana `<ul>`
 ```html
 <ul>
@@ -9,20 +8,23 @@
   <li>Masło</li>
 </ul>
 ```
+
 Wynik:
-> - Mleko  
-> - Jajka  
-> - Chleb  
-> - Masło
+
+```text
+• Mleko
+• Jajka
+• Chleb
+• Masło
+```
 
 Styl punktora można zmieniać w CSS:
 ```css
 ul{
-  list-style-type: none; /* Brak punktora */
+  list-style-type: none;   /* Brak punktora */
   list-style-type: square; /* Kwadratowy punktor */
 }
 ```
-
 
 ### Lista uporządkowana `<ol>`
 ```html
@@ -33,12 +35,36 @@ ul{
   <li>Odcedź i podaj</li>
 </ol>
 ```
-Wynik:
-> 1. Zagotuj wodę
-> 2. Wsyp makaron
-> 3. Gotuj 8 minut
-> 4. Odcedź i podaj
 
+Wynik:
+
+```text
+1. Zagotuj wodę
+2. Wsyp makaron
+3. Gotuj 8 minut
+4. Odcedź i podaj
+```
+
+### Lista definicji `<dl>`
+
+```html
+<dl>
+  <dt>Termin</dt>
+  <dd>Wyjaśnienie terminu</dd>
+  <dt>Kolejny termin</dt>
+  <dd>Wyjaśnienie drugiego terminu</dd>
+</dl>
+```
+
+Wynik:
+
+```text
+Termin
+    Wyjaśnienie terminu
+
+Kolejny termin
+    Wyjaśnienie drugiego terminu
+```
 
 ### Zagnieżdżanie list
 ```html
@@ -57,24 +83,29 @@ Wynik:
   </li>
 </ul>
 ```
+
 Wynik:
-> - Europa
->   - Polska
->   - Niemcy
-> - Azja
->   - Japonia
->   - Chiny
+
+```text
+• Europa
+    • Polska
+    • Niemcy
+
+• Azja
+    • Japonia
+    • Chiny
+```
 
 ---
 
-## TABELE
- 
-### Tabela `<table>`, `<tr>`, `<td>`
+# TABELE
+
+### Tabela `<table>`, `<tr>`, `<th>`, `<td>`
 ```html
 <table>
   <tr>
-    <td>Komórka 1</td>
-    <td>Komórka 2</td>
+    <th>Komórka 1</th>
+    <th>Komórka 2</th>
   </tr>
   <tr>
     <td>Komórka 3</td>
@@ -82,11 +113,13 @@ Wynik:
   </tr>
 </table>
 ```
+
 Wynik:
-> | Komórka 1 | Komórka 2 |  
-> | Komórka 3 | Komórka 4 |  
- 
- 
+
+| Komórka 1 | Komórka 2 |
+|-----------|-----------|
+| Komórka 3 | Komórka 4 |
+
 ### Nagłówek kolumny `<th>`
 ```html
 <table>
@@ -107,8 +140,10 @@ Wynik:
   </tr>
 </table>
 ```
+
 Wynik:
-> | **Imię** | **Wiek** | **Miasto** |
-> |----------|----------|------------|
-> | Anna     | 28       | Warszawa   |
-> | Piotr    | 34       | Kraków     |
+
+| Imię  | Wiek | Miasto   |
+|--------|------|----------|
+| Anna   | 28   | Warszawa |
+| Piotr  | 34   | Kraków   |
