@@ -1,5 +1,6 @@
 body{
-    font-family: 'Bookman', serif;
+    margin: 0;
+    font-family: Bookman, serif;
 }
 
 header, footer{
@@ -9,31 +10,32 @@ header, footer{
     text-align: center;
 }
 
-#napis{
+section#blok_napisu{
     background-color: blueviolet;
     padding: 10px;
     text-align: right;
 }
 
-#left, #right{
+section#left, section#right{
     background-color: lavender;
     height: 500px;
+}
+
+section#left{
+    width: 25%;
     float: left;
 }
 
-#left{
-    width: 25%;
-}
-
-#right{
-    width: 35%;
-}
-
-main{
+section#center{
     background-color: ghostwhite;
     text-align: center;
     height: 500px;
     width: 40%;
+    float: left;
+}
+
+section#right{
+    width: 35%;
     float: left;
 }
 
@@ -54,14 +56,10 @@ table, form{
 }
 
 table, td{
-    border: 1px solid indigo;
     border-collapse: collapse;
+    border: solid 1px indigo;
 }
 
-th, td{
+td, th{
     padding: 3px;
-}
-
-footer{
-    clear: both;
 }
