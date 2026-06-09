@@ -14,58 +14,54 @@
     <article>
         <?php
             $conn = mysqli_connect("localhost", "root", "", "medica");
-
             $query = mysqli_query($conn, "SELECT nazwa, cena, opis FROM abonamenty");
-
             while($row = mysqli_fetch_assoc($query)){
-                echo"<h3>" . $row['nazwa'] . " - " . $row['cena'] . " zł</h3>";
-                echo"<p>" . $row['opis'] . "</p>";
+                echo"<h3>Pakiet {$row['nazwa']} - cena {$row['cena']} zł</h3>";
+                echo"<p>{$row['opis']}</p>";
             }
         ?>
         <a href="opis.html">Dowiedz się więcej</a>
     </article>
+
     <main>
-        <section id=section1>
+        <section id="left">
             <h2>Standardowy</h2>
             <ul>
-                <?php 
-                    $query = mysqli_query($conn, "SELECT nazwa, cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = abonamenty_id JOIN cechy ON cechy.id = cechy_id WHERE abonamenty.id = 1");
-                    
-                    while($row = mysqli_fetch_assoc($query)){
-                        echo"<li>" . $row['cecha'] . "</li>";
-                    }
-                ?>
+            <?php
+                $query = mysqli_query($conn, "SELECT nazwa, cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = abonamenty_id JOIN cechy ON cechy.id = cechy_id WHERE abonamenty.id = 1");
+                while($row = mysqli_fetch_assoc($query)){
+                    echo"<li>{$row['cecha']}</li>";
+                }
+            ?>
             </ul>
         </section>
-        <section id=section2>
+        <section id="center">
             <h2>Premium</h2>
             <ul>
-                <?php 
-                    $query = mysqli_query($conn, "SELECT nazwa, cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = abonamenty_id JOIN cechy ON cechy.id = cechy_id WHERE abonamenty.id = 2");
-
-                    while($row = mysqli_fetch_assoc($query)){
-                        echo"<li>" . $row['cecha'] . "</li>";
-                    }
-                ?>
+            <?php
+                $query = mysqli_query($conn, "SELECT nazwa, cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = abonamenty_id JOIN cechy ON cechy.id = cechy_id WHERE abonamenty.id = 2");
+                while($row = mysqli_fetch_assoc($query)){
+                    echo"<li>{$row['cecha']}</li>";
+                }
+            ?>
             </ul>
         </section>
-        <section id=section3>
+        <section id="right">
             <h2>Dziecko</h2>
             <ul>
-                <?php 
-                    $query = mysqli_query($conn, "SELECT nazwa, cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = abonamenty_id JOIN cechy ON cechy.id = cechy_id WHERE abonamenty.id = 3");
-
-                    while($row = mysqli_fetch_assoc($query)){
-                        echo"<li>" . $row['cecha'] . "</li>";
-                    }
-
-                    mysqli_close($conn);
-                ?>
+            <?php
+                $query = mysqli_query($conn, "SELECT nazwa, cecha FROM abonamenty JOIN szczegolyabonamentu ON abonamenty.id = abonamenty_id JOIN cechy ON cechy.id = cechy_id WHERE abonamenty.id = 3");
+                while($row = mysqli_fetch_assoc($query)){
+                    echo"<li>{$row['cecha']}</li>";
+                }
+                mysqli_close($conn);
+            ?>
             </ul>
         </section>
     </main>
+
     <footer>
-        <p><img src="obraz2.png" alt="przychodnia"> Stronę przygotował: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></p>
+        <p><img src="obraz2.png" alt="przychodnia">Stronę przygotował: <a href="https://github.com/alanwnuczko">Alan Wnuczko</a></p>
     </footer>
 </body>
 </html>
