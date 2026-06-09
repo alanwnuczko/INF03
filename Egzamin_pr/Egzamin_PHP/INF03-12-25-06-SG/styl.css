@@ -1,5 +1,9 @@
 *{
-    font-family: 'Georgia';
+    font-family: Georgia;
+}
+
+body{
+    margin: 0;
 }
 header, footer{
     background-color: #1B5E20;
@@ -8,11 +12,12 @@ header, footer{
     padding: 5px;
 }
 
-main{
-    display: flex;
+footer{
+    clear: both;
 }
 
 article{
+    clear: both;
     background: url(obraz1.jpg);
     color: dimgray;
     font-size: 150%;
@@ -21,6 +26,7 @@ article{
 }
 
 section{
+    float: left;
     background-color: #00E676;
     color: #1B5E20;
     width: 28%;
