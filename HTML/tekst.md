@@ -45,6 +45,10 @@ Drugi akapit tekstu.
 ---
 
 ### Pogrubienie `<strong>`
+![Znacznik <strong>](md_assets/znacznik_strong.png)
+```html
+<p>Autor: <strong>12345678901</strong></p>
+```
 ```html
 <p>Cena wynosi <strong>99 zł</strong>.</p>
 ```
@@ -52,11 +56,14 @@ Drugi akapit tekstu.
 Wynik:
 
 ```text
+Autor: 12345678901
+```
+> Numer zdającego będzie pogrubiony
+
+```text
 Cena wynosi 99 zł.
 ```
-
-(tekst „99 zł” będzie pogrubiony)
-
+>"99 zł" będzie pogrubione
 ---
 
 ### Kursywa `<em>`
@@ -70,10 +77,32 @@ Wynik:
 Tytuł książki to Wiedźmin.
 ```
 
-(tekst „Wiedźmin” będzie zapisany kursywą)
+>(tekst „Wiedźmin” będzie zapisany kursywą)
 
 ---
 
+### Indeks górny `<sup>`
+```html
+<p>X<sup>2</sup></p>
+```
+
+Wynik:
+
+```text
+X²
+```
+---
+
+### Indeks dolny `<sub>`
+```html
+<p>H<sub>2</sub>O</p>
+```
+
+Wynik:
+```text
+H₂O
+```
+---
 ### Łamanie wiersza `<br>`
 ```html
 <p>Pierwsza linia<br>Druga linia<br>Trzecia linia</p>
@@ -104,6 +133,15 @@ Kontakt
 Napisz e-mail
 ```
 
-- „Przejdź do Google” prowadzi do `https://www.google.com`
-- „Kontakt” prowadzi do `kontakt.html`
-- „Napisz e-mail” otwiera program pocztowy dla `jan@example.com`
+>- „Przejdź do Google” prowadzi do `https://www.google.com`
+>- „Kontakt” prowadzi do podstrony `kontakt.html`
+>- „Napisz e-mail” otwiera program pocztowy dla `jan@example.com`
+
+---
+
+### Blok cytatu `<blockquote>`
+```html
+<blockquote>
+    Cytat
+</blockquote>
+```
