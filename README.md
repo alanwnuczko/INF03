@@ -34,7 +34,7 @@ INF03/
 
 ### 2026
 
-**Sesja zima**
+**Sesja lato**
 
 | Opis | Nr | Język | Arkusz | Rozwiązanie |
 |---|---|---|---|---|
