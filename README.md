@@ -39,6 +39,7 @@ INF03/
 | Opis | Nr | Język | Arkusz | Rozwiązanie |
 |---|---|---|---|---|
 | Islandia | 1 | PHP | [INF.03-01-26.06-SG](Egzamin_pr/Egzamin_PHP/INF03-01-26-06-SG/arkusz_i_baza/INF03-01-26-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-01-26-06-SG/) |
+| Wodospady | 2 | PHP | [INF.03-02-26.06-SG](Egzamin_pr/Egzamin_PHP/INF03-02-26-06-SG/arkusz_i_baza/INF03-02-26-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-02-26-06-SG/) |
 
 **Sesja zima**
 
