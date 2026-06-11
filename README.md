@@ -41,6 +41,7 @@ INF03/
 | Islandia | 1 | PHP | [INF.03-01-26.06-SG](Egzamin_pr/Egzamin_PHP/INF03-01-26-06-SG/arkusz_i_baza/INF03-01-26-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-01-26-06-SG/) |
 | Wodospady | 2 | PHP | [INF.03-02-26.06-SG](Egzamin_pr/Egzamin_PHP/INF03-02-26-06-SG/arkusz_i_baza/INF03-02-26-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-02-26-06-SG/) |
 | Wycieczki | 4 | JS | [INF.03-04-26.06-SG](Egzamin_pr/Egzamin_JS/INF03-04-26-06-SG/arkusz_i_baza/INF03-04-26-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_JS/INF03-04-26-06-SG/) |
+| Antyki | 5 | PHP | [INF.03-05-26.06-SG](Egzamin_pr/Egzamin_PHP/INF03-05-26-06-SG/arkusz_i_baza/INF03-05-26-06-SG.pdf) | [Rozwiązanie](Egzamin_pr/Egzamin_PHP/INF03-05-26-06-SG/) |
 
 **Sesja zima**
 
