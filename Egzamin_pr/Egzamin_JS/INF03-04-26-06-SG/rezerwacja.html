@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Biuro turystyczne</title>
+</head>
+<body>
+    <header>
+        <h1>Rezerwacja wycieczek</h1>
+    </header>
+    <main>
+        <aside>
+            <img src="1.jpg" alt="wycieczki">
+            <img src="2.jpg" alt="wycieczki">
+            <img src="3.jpg" alt="wycieczki">
+            <img src="1.jpg" alt="wycieczki">
+            <img src="2.jpg" alt="wycieczki">
+            <img src="3.jpg" alt="wycieczki">
+            <img src="1.jpg" alt="wycieczki">
+            <img src="2.jpg" alt="wycieczki">
+            <img src="3.jpg" alt="wycieczki">
+        </aside>
+        <nav>
+            <button onclick="uczestnik()" id="buttonUczestnik">Uczestnik</button>
+            <button onclick="rezerwacja()" id="buttonRezerwacja">Rezerwacja</button>
+        </nav>
+        <section id="left">
+            <h2>Dane klienta</h2>
+            <img src="osoba.png" alt="Klient"><br>
+            <label for="inputImie">Imię</label>
+            <input type="text" name="inputImie" id="inputImie"><br>
+            <label for="inputNazwisko">Nazwisko</label>
+            <input type="text" name="inputNazwisko" id="inputNazwisko">
+            <p><a href="wycieczki.html">Do strony głównej</a></p>
+        </section>
+        <section id="right">
+            <h2>Dane rezerwacji</h2>
+            <span onclick="poprzedniObraz()">&laquo;</span>
+            <img src="1.jpg" alt="wycieczka" id="obrazMiejsca">
+            <span onclick="nastepnyObraz()">&raquo;</span>
+            <h4 id="nazwaMiejsca">Barcelona</h4>
+            <label for="inpuOsob">Liczba osób</label>
+            <input type="number" name="inputOsob" id="inputOsob" min="1" max="4" placeholder="2" disabled><br>
+            <label for="listaWylot">Miejsce wylotu</label>
+            <select name="listaWylot" id="listaWylot" disabled>
+                <option value="Warszawa">Warszawa</option>
+                <option value="Krakow">Kraków</option>
+                <option value="Wroclaw">Wrocław</option>
+            </select><br>
+            <input type="radio" name="radio" id="radioSniadania" checked disabled><label for="radio">Śniadania</label>
+            <input type="radio" name="radio" id="radioSniadaniaObiadokolacje" disabled><label for="radio">Śniadania i obiadokolacje</label>
+            <input type="radio" name="radio" id="radioAllInclusive" disabled><label for="radio">All inclusive</label><br>
+            <button>Sprawdź cenę</button>
+        </section>
+    </main>
+    <footer>
+        <p>Autor strony: <em><a href="https://github.com/alanwnuczko">Alan Wnuczko</a></em></p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
