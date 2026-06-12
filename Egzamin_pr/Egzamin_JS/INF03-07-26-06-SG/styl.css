@@ -1,0 +1,55 @@
+*{
+    font-family: 'Lucida Console', monospace;
+}
+
+body{
+    background-color: honeydew;
+    text-align: center;
+}
+
+header, footer{
+    padding: 20px;
+}
+
+section#left, section#right{
+    background-color: palegreen;
+    width: 20%;
+    height: 20%;
+    padding: 80px 0 80px 0;
+    border-radius: 40px;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+}
+
+section#right{
+    visibility: hidden;
+    float: right;
+}
+
+section#center{
+    width: 60%;
+    box-shadow: 0 0 10px darkgreen;
+}
+
+img{
+    width: 80%;
+    margin: 10px;
+    cursor: pointer;
+}
+
+table{
+    width: 90%;
+    margin: 10px;
+    border-collapse: collapse;
+}
+
+td{
+    border: solid 3px seagreen;
+}
+
+td:active{
+    background-color: seagreen;
+}
