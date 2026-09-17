@@ -14,7 +14,10 @@ CREATE TABLE miejscowosci (
     PRIMARY KEY (kod_poczt)
 );
 
-INSERT INTO miejscowosci(kod_poczt, miejscowosc) VALUES('80001', 'Gdańsk');
+INSERT INTO miejscowosci (kod_poczt, miejscowosc) VALUES
+('00-950', 'Warszawa'),
+('31-150', 'Kraków'),
+('80-800', 'Gdańsk');
 ```
 
 ## Procedura bez parametrów
@@ -80,7 +83,7 @@ SHOW PROCEDURE STATUS WHERE Db = 'baza';
 **Tabele:**
 ```sql
 CREATE TABLE pracownicy (
-  PESEL INT(11) PRIMARY KEY,
+  PESEL BIGINT PRIMARY KEY,
   imie VARCHAR(20),
   nazwisko VARCHAR(40),
   data_ur DATE,
@@ -91,11 +94,11 @@ CREATE TABLE pracownicy (
 
 
 CREATE TABLE zatrudnienie (
-  PESEL INT(11) PRIMARY KEY,
+  PESEL BIGINT PRIMARY KEY,
   data_rozp DATE,
   data_zak DATE,
-  zarobek FLOAT,
-  rodzinne FLOAT,
+  zarobek DECIMAL(10, 2),
+  rodzinne DECIMAL(10, 2),
   opinia VARCHAR(100),
   id_dzial_stanow INT
 );
@@ -147,49 +150,90 @@ INSERT INTO zatrudnienie (PESEL, data_rozp, data_zak, zarobek, rodzinne, opinia,
 
 <br>
 
-**1.**
+**1. Wyświetl posortowaną słownikowo listę imion i nazwisk osób zatrudnionych w firmie.**
+
 ```sql
 DELIMITER //
 CREATE PROCEDURE imie_nazwisko()
 BEGIN
-SELECT nazwisko, imie FROM pracownicy
-INNER JOIN zatrudnienie ON pracownicy.PESEL = zatrudnienie.PESEL
-WHERE data_zak IS NULL
-ORDER BY pracownicy.nazwisko ASC, parcownicy.imie ASC;
+    SELECT pracownicy.imie, pracownicy.nazwisko
+    FROM pracownicy
+    INNER JOIN zatrudnienie ON pracownicy.PESEL = zatrudnienie.PESEL
+    WHERE zatrudnienie.data_zak IS NULL
+    ORDER BY pracownicy.nazwisko ASC, pracownicy.imie ASC;
 END //
-```
-**2.**
-```sql
-DELIMITER //
-CREATE PROCEDURE maximum_zarobek(OUT ile FLOAT)
-BEGIN
-SELECT MAX(zarobek) INTO ile FROM zatrudnienie
-WHERE zatrudnienie.data_zak IS NULL;
-END //
+DELIMITER ;
 ```
 
+**2. Przekaż do zmiennej maksymalne zarobki w firmie.**
 
-**3.**
 ```sql
 DELIMITER //
-CREATE PROCEDURE dzial(IN p_imie VARCHAR(30), p_nazwisko VARCHAR(40))
+CREATE PROCEDURE maximum_zarobek(OUT ile DECIMAL(10, 2))
 BEGIN
-SELECT dzialy_stanow.nazwa_dzialu FROM dzialy_stanow
-JOIN zatrudnienie ON dzialy_stanow.id_dzial_stanow = zatrudnienie.id_dzial_stanow
-JOIN pracownicy ON zatrudnienie.PESEL = pracownicy.PESEL
-WHERE imie = p_imie AND nazwisko = p_nazwisko;
+    SELECT MAX(zarobek)
+    INTO ile
+    FROM zatrudnienie
+    WHERE zatrudnienie.data_zak IS NULL;
 END //
+DELIMITER ;
+
+SET @maksymalne_zarobki = 0;
+CALL maximum_zarobek(@maksymalne_zarobki);
+SELECT @maksymalne_zarobki;
 ```
 
 
-**4.**
+**3. Przekaż nazwę działu, w którym pracuje podana przez użytkownika osoba (imię i nazwisko).**
+
 ```sql
 DELIMITER //
-CREATE PROCEDURE avg_zarobki(In dzial VARCHAR(40) OUT ile (FLOAT))
+CREATE PROCEDURE dzial(
+    IN p_imie VARCHAR(20),
+    IN p_nazwisko VARCHAR(40)
+)
 BEGIN
-SELECT dzialy_stanow.nazwa_dzialu, AVG(zatrudnienie.zarobek) INTO ile FROM zatrudnienie
-JOIN dzialy_stanow ON dzialy_stanow.id_dzial_stanow = zatrudnienie.id_dzial_stanow
-WHERE nazwa_dzialu = dzial
-GROUP BY dzialy_stanow.nazwa_dzialu;
+    SELECT dzialy_stanow.nazwa_dzialu
+    FROM dzialy_stanow
+    INNER JOIN zatrudnienie
+        ON dzialy_stanow.id_dzial_stanow = zatrudnienie.id_dzial_stanow
+    INNER JOIN pracownicy
+        ON zatrudnienie.PESEL = pracownicy.PESEL
+    WHERE pracownicy.imie = p_imie
+      AND pracownicy.nazwisko = p_nazwisko
+      AND zatrudnienie.data_zak IS NULL;
 END //
+DELIMITER ;
+```
+
+
+**4. Wyświetl średnie zarobki pracowników w każdym dziale i przekaż do zmiennej maksymalne zarobki z działu podanego przez użytkownika.**
+
+```sql
+DELIMITER //
+CREATE PROCEDURE avg_zarobki(
+    IN p_dzial VARCHAR(50),
+    OUT p_maksymalne_zarobki DECIMAL(10, 2)
+)
+BEGIN
+    SELECT dzialy_stanow.nazwa_dzialu, AVG(zatrudnienie.zarobek) AS srednie_zarobki
+    FROM zatrudnienie
+    INNER JOIN dzialy_stanow
+        ON dzialy_stanow.id_dzial_stanow = zatrudnienie.id_dzial_stanow
+    WHERE zatrudnienie.data_zak IS NULL
+    GROUP BY dzialy_stanow.nazwa_dzialu;
+
+    SELECT MAX(zatrudnienie.zarobek)
+    INTO p_maksymalne_zarobki
+    FROM zatrudnienie
+    INNER JOIN dzialy_stanow
+        ON dzialy_stanow.id_dzial_stanow = zatrudnienie.id_dzial_stanow
+    WHERE dzialy_stanow.nazwa_dzialu = p_dzial
+      AND zatrudnienie.data_zak IS NULL;
+END //
+DELIMITER ;
+
+SET @maksymalne_zarobki_dzialu = 0;
+CALL avg_zarobki('IT', @maksymalne_zarobki_dzialu);
+SELECT @maksymalne_zarobki_dzialu;
 ```
